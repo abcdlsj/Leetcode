@@ -98,7 +98,7 @@ class Leetcode:
                                          data=data).json()['data']['question']
         return question_content
 
-    def output_source(self, lang='c++', lang_suffix='rs', max_threads=8):
+    def output_source(self, lang='cpp', lang_suffix='cpp', max_threads=8):
         self.get_cached_solved_ques()
         solved_list = self.get_solved_list()
         threads = []
@@ -116,6 +116,8 @@ class Leetcode:
                 except JSONDecodeError:
                     return
                 for submit in submit_list:
+                    print(submit)
+                    """
                     if submit["lang"] == lang:
                         src = self.get_source(submit['url'])
                         if not src: continue
@@ -140,6 +142,7 @@ class Leetcode:
                                                              question_content=html.unescape(question_content['translatedContent']).replace('<p>\xa0</p>', ''),
                                                              code = src))
                         break # 只取最新的(第一条就是)
+                    """
 
             while len(threads) >= max_threads:
                 for thread in threads:
@@ -204,5 +207,5 @@ if __name__ == '__main__':
     lc.output_source()
 
     subprocess.run(["git", "add", "."])
-    subprocess.run(["git", "commit", "-m", "commit by crawler.py @abcdlsj at {}".format(datetime.now().strftime("%Y-%m-%d %H:%M"))])
+    subprocess.run(["git", "commit", "-m", "commit by leetcode_.py @abcdlsj at {}".format(datetime.now().strftime("%Y-%m-%d %H:%M"))])
     subprocess.run(["git", "push", "-f", "origin", "master"])
