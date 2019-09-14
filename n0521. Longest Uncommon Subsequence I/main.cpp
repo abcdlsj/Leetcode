@@ -1,3 +1,5 @@
+// Author: abcdlsj @ https://github.com/abcdlsj/Leetcode
+
 #include <cstring>
 #include <cmath>
 class Solution {
