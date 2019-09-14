@@ -1,12 +1,5 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Sep 14 14:15:12 2019
-
-@author: lison
-"""
-
 #!/usr/bin/env python
-# encoding: utf-8
+# encoding='utf-8'
 import requests, os
 import requests_cache
 import re, threading
@@ -19,12 +12,13 @@ from json.decoder import JSONDecodeError
 
 CODE_TEMPLATE = \
 """// Author: abcdlsj @ https://github.com/abcdlsj/Leetcode
-
 {code}
 """
 
 REPO_README_TEMPLATE = """
 ## Leetcode
+本项目记录我的C++刷题
+本项目由`crawler.py`生成，代码自动爬取Leetcode-cn.com网站获取个人提交记录。使用方法：登陆Leetcode后记录cookie，设置环境变量`LEETCODE_COOKIE`，然后执行本脚本就能抓取指定语言的个人提交记录。
 目前已解决的题目（{solv_question_num} 个，其中简单{easy_num} 个，中等{medium_num} 个， 困难{hard_num} 个）：
 {solv_question_list}
 """
@@ -35,10 +29,8 @@ QUESTION_TEMPLATE = \
 - 执行时间: {runtime} 
 - 内存消耗: {mem_usage}
 - 通过日期: {time}
-
 ## 题目内容
 {question_content}
-
 ## 解法
 ```{lang}
 {code}
@@ -63,6 +55,8 @@ class Leetcode:
 
     def get_solved_list(self):
         with requests_cache.disabled():
+            # print("solved_list: ", requests.get(Leetcode.LEETCODE_LIST_URL, headers=self.headers).json())
+            # solv_list = requests.get(Leetcode.LEETCODE_LIST_URL, headers=self.headers).json()
             return [{
                 "question_slug": v['stat']['question__title_slug'],
                 "question_id": v['stat']['frontend_question_id'], # 用页面上显示的id
@@ -98,7 +92,7 @@ class Leetcode:
                                          data=data).json()['data']['question']
         return question_content
 
-    def output_source(self, lang='cpp', lang_suffix='cpp', max_threads=8):
+    def output_source(self, lang='cpp', lang_suffix='cpp', max_threads=8):                              
         self.get_cached_solved_ques()
         solved_list = self.get_solved_list()
         threads = []
@@ -131,7 +125,7 @@ class Leetcode:
 
                         with open(os.path.join(dir_name, "README.md"), "w",encoding='utf-8') as f:
                             f.write(QUESTION_TEMPLATE.format(question_name = question_["question_title"],
-                                                             question_level = '*' * question_["question_difficulty"],
+                                                             question_level = ":star:" * question_["question_difficulty"],
                                                              question_url = self.LEETCODE_URL + "/problems/{}".format(question_["question_slug"]),
                                                              runtime = submit["runtime"],
                                                              mem_usage = submit["memory"],
@@ -140,6 +134,7 @@ class Leetcode:
                                                              question_content=html.unescape(question_content['translatedContent']).replace('<p>\xa0</p>', ''),
                                                              code = src))
                         break # 只取最新的(第一条就是)
+            
             while len(threads) >= max_threads:
                 for thread in threads:
                     if not thread.is_alive():
@@ -174,7 +169,7 @@ class Leetcode:
         for dir in os.listdir('.'):
             if not pattern_name.match(dir): continue
             # 更新难度
-            level = open('{}/README.md'.format(dir), 'r',encoding='utf-8').readline().count('*')
+            level = open('{}/README.md'.format(dir), 'r',encoding='utf-8').readline().count(':star:')
             question_level[level] += 1
             question_list.append('{} {}'.format(dir, '*' * level))
 
@@ -183,10 +178,11 @@ class Leetcode:
         question_list = '\n'.join(
             map(lambda u: "- [{}]({})".format(
                 u.lstrip('n0'), requote_uri(
-                    (Leetcode.REPO_URL + '/tree/master/{}'.format(u.replace('*', ''))).strip()
+                    (Leetcode.REPO_URL + '/tree/master/{}'.format(u.replace(':star:', ''))).strip()
                 )
             ) , question_list)
         )
+
         with open("README.md", "w",encoding='utf-8') as f:
             f.write(REPO_README_TEMPLATE.format(solv_question_num=sum(question_level.values()),
                                                 easy_num=question_level[1],
@@ -200,8 +196,8 @@ if __name__ == '__main__':
     lc = Leetcode()
 
     lc.output_source()
-    
+    """
     subprocess.run(["git", "add", "."])
-    subprocess.run(["git", "commit", "-m", "commit by leetcode_.py @abcdlsj at {}".format(datetime.now().strftime("%Y-%m-%d %H:%M"))])
+    subprocess.run(["git", "commit", "-m", "commit by crawler.py @Netcan at {}".format(datetime.now().strftime("%Y-%m-%d %H:%M"))])
     subprocess.run(["git", "push", "-f", "origin", "master"])
-    
+    """
