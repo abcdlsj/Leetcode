@@ -123,7 +123,7 @@ class Leetcode:
                         question_content = self.get_question_content(question_["question_slug"])
                         if question_content['translatedContent'] is None: continue
                         src = CODE_TEMPLATE.format(code=src)
-                        dir_name = "n{:04d}. {}".format(question_["question_id"], question_["question_title"]).rstrip()
+                        dir_name = "n{:04d}. {}".format(question_["question_id"], question_["question_title"]).strip()
                         if not os.path.exists(dir_name):
                             os.mkdir(dir_name)
                         with open(os.path.join(dir_name, "main.{}".format(lang_suffix)), "w",encoding='utf-8') as f:
