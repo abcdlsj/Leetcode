@@ -117,7 +117,6 @@ class Leetcode:
                     return
                 for submit in submit_list:
                     print(submit)
-                    """
                     if submit["lang"] == lang:
                         src = self.get_source(submit['url'])
                         if not src: continue
@@ -125,13 +124,13 @@ class Leetcode:
                         question_content = self.get_question_content(question_["question_slug"])
                         if question_content['translatedContent'] is None: continue
                         src = CODE_TEMPLATE.format(code=src)
-                        dir_name = "n{:04d}. {}".format(question_["question_id"], question_["question_title"])
+                        dir_name = "{:04d}. {}".format(question_["question_id"], question_["question_title"])
                         if not os.path.exists(dir_name):
                             os.mkdir(dir_name)
-                        with open(os.path.join(dir_name, "main.{}".format(lang_suffix)), "w") as f:
+                        with open(os.path.join(dir_name, "main.{}".format(lang_suffix)), "w",encoding='utf-8') as f:
                             f.write(src)
 
-                        with open(os.path.join(dir_name, "README.md"), "w") as f:
+                        with open(os.path.join(dir_name, "README.md"), "w",encoding='utf-8') as f:
                             f.write(QUESTION_TEMPLATE.format(question_name = question_["question_title"],
                                                              question_level = ":star:" * question_["question_difficulty"],
                                                              question_url = self.LEETCODE_URL + "/problems/{}".format(question_["question_slug"]),
@@ -142,7 +141,7 @@ class Leetcode:
                                                              question_content=html.unescape(question_content['translatedContent']).replace('<p>\xa0</p>', ''),
                                                              code = src))
                         break # 只取最新的(第一条就是)
-                    """
+                    
 
             while len(threads) >= max_threads:
                 for thread in threads:
