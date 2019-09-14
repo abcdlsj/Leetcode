@@ -1,21 +1,23 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Sep 14 14:15:12 2019
+Created on Fri Sep 13 09:26:02 2019
 
 @author: lison
 """
 
-#!/usr/bin/env python
-# encoding: utf-8
-import requests, os
+import requests
+import os
+import re
 import requests_cache
-import re, threading
 import html
-import subprocess, time
+import subprocess
+import time
+import threading
 from requests.utils import requote_uri
 from collections import Counter
 from datetime import datetime
 from json.decoder import JSONDecodeError
+
 
 CODE_TEMPLATE = \
 """// Author: abcdlsj @ https://github.com/abcdlsj/Leetcode
@@ -44,9 +46,10 @@ QUESTION_TEMPLATE = \
 {code}
 ```"""
 
+
 class Leetcode:
-    LEETCODE_URL = 'https://leetcode-cn.com'
-    LEETCODE_LIST_URL = 'https://leetcode-cn.com/api/problems/all/'
+    LEETCODE_URL= 'https://leetcode-cn.com'
+    LEETCODE_LIST_URL ='https://leetcode-cn.com/api/problems/all/'
     LEETCODE_GRAPHQL = 'https://leetcode-cn.com/graphql'
     REPO_URL = 'https://github.com/abcdlsj/Leetcode'
     def __init__(self):
@@ -59,64 +62,53 @@ class Leetcode:
                 'content-type':"application/json",
                 'cookie':self.cookies,
                 }
-        self.cached_solved_quest = {}
-
+        self.cached_solved_quest ={}
+    
     def get_solved_list(self):
         with requests_cache.disabled():
-            # print("solved_list: ", requests.get(Leetcode.LEETCODE_LIST_URL, headers=self.headers).json())
-            # solv_list = requests.get(Leetcode.LEETCODE_LIST_URL, headers=self.headers).json()
             return [{
-                "question_slug": v['stat']['question__title_slug'],
-                "question_id": v['stat']['frontend_question_id'], # 用页面上显示的id
-                "question_title": v['stat']['question__title'],
-                "question_difficulty": v['difficulty']['level']
-                } for v in
-                    requests.get(Leetcode.LEETCODE_LIST_URL, headers=self.headers).json()['stat_status_pairs']
-                if v['status'] == 'ac'
-            ]
-
-    def get_submit_list(self, question_slug):
+                "question_slug": va['stat']['question__title_slug'],
+                "question_id": va['stat']['frontend_question_id'],
+                "question_title": va['stat']['question__title'],
+                "question_difficulty": va['difficulty']['level']
+                } for va in requests.get(Leetcode.LEETCODE_LIST_URL,headers=self.headers).json()['stat_status_pairs'] if va['status'] =='ac']
+             
+    def get_submit_list(self,question_slug):
         with requests_cache.disabled():
             data = '{"operationName":"Submissions","variables":{"offset":0,"limit":0,"lastKey":null,"questionSlug":"%s"},"query":"query Submissions($offset: Int!, $limit: Int!, $lastKey: String, $questionSlug: String!) {\\n  submissionList(offset: $offset, limit: $limit, lastKey: $lastKey, questionSlug: $questionSlug) {\\n    lastKey\\n    hasNext\\n    submissions {\\n      id\\n      statusDisplay\\n      lang\\n      runtime\\n      timestamp\\n      url\\n      isPending\\n      memory\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n"}' % question_slug
-            submit_list = [item for item in
-                           requests.post(Leetcode.LEETCODE_GRAPHQL,
-                                         headers=self.headers,
-                                         data=data).json()['data']['submissionList']['submissions']
+            submit_list = [item for item in 
+                           requests.post(Leetcode.LEETCODE_GRAPHQL,headers=self.headers,
+                                         data=data).json()['data']['submissonList']['submissions']
                            if item['statusDisplay'].lower() == 'accepted']
             return submit_list
-
-    def get_source(self, url): # /submissions/detail/14313499/
-        req_url = self.LEETCODE_URL + url
+    def get_code(self,url):
+        req_url = self.LEETCODE_URL+url
         try:
             src = re.search('submissionCode: \'(.*)\',', requests.get(req_url, headers=self.headers).text).group(1)
-            return src.encode('cp1252', 'backslashreplace').decode('unicode-escape')
+            return src.encode('cp1252','backslashreplace').decode('unicode-escape')
         except AttributeError:
             pass
-
-    def get_question_content(self, question_slug): # /problems/number-of-enclaves/
+    def get_question_content(self,question_slug):
         data = '{"operationName":"questionData","variables":{"titleSlug":"%s"},"query":"query questionData($titleSlug: String!) {\\n  question(titleSlug: $titleSlug) {\\n    questionId\\n    questionFrontendId\\n    boundTopicId\\n    title\\n    titleSlug\\n    content\\n    translatedTitle\\n    translatedContent\\n    isPaidOnly\\n    difficulty\\n    likes\\n    dislikes\\n    isLiked\\n    similarQuestions\\n    contributors {\\n      username\\n      profileUrl\\n      avatarUrl\\n      __typename\\n    }\\n    langToValidPlayground\\n    topicTags {\\n      name\\n      slug\\n      translatedName\\n      __typename\\n    }\\n    companyTagStats\\n    codeSnippets {\\n      lang\\n      langSlug\\n      code\\n      __typename\\n    }\\n    stats\\n    hints\\n    solution {\\n      id\\n      canSeeDetail\\n      __typename\\n    }\\n    status\\n    sampleTestCase\\n    metaData\\n    judgerAvailable\\n    judgeType\\n    mysqlSchemas\\n    enableRunCode\\n    enableTestMode\\n    envInfo\\n    __typename\\n  }\\n}\\n"}' % question_slug
-        question_content = requests.post(self.LEETCODE_GRAPHQL,
-                                         headers=self.headers,
-                                         data=data).json()['data']['question']
-        return question_content
-
-    def output_source(self, lang='c++', lang_suffix='rs', max_threads=8):
-        self.get_cached_solved_ques()
+        question_cotent = requests.post(self.LEETCODE_GRAPHQL,
+                                        headers=self.headers,
+                                        data=data).json()['data']['question']
+        return question_cotent
+    def output_source(self,lang='cpp',lang_suffix='rs',max_threads=8):
         solved_list = self.get_solved_list()
         threads = []
         for idx, question in enumerate(solved_list):
             print("processing: {}. {} ({}/{})".format(question["question_id"],
                                                       question["question_title"],
                                                       idx + 1, len(solved_list)))
-            if question["question_title"] in self.cached_solved_quest:
-                print("cached: ", question["question_title"])
+            if question['question_title'] in self.cached_solved_quest:
+                print("cached: ",question["question__title"])
                 continue
-
             def process_submit_list(question_):
                 try:
                     submit_list = self.get_submit_list(question_["question_slug"])
                 except JSONDecodeError:
-                    return
+                    return 
                 for submit in submit_list:
                     if submit["lang"] == lang:
                         src = self.get_source(submit['url'])
@@ -142,32 +134,29 @@ class Leetcode:
                                                              question_content=html.unescape(question_content['translatedContent']).replace('<p>\xa0</p>', ''),
                                                              code = src))
                         break # 只取最新的(第一条就是)
-
+            
             while len(threads) >= max_threads:
                 for thread in threads:
                     if not thread.is_alive():
                         threads.remove(thread)
                 time.sleep(0.5)
-
-            thread = threading.Thread(target=process_submit_list, args=(question,), daemon=True)
+            
+            thread = threading.Thread(target=process_submit_list,args=(question),daemon=True)
             thread.start()
             threads.append(thread)
-
-        # 最后检查存活线程
-        while len(threads) > 0:
+        while len(threads) >0:
             for thread in threads:
                 if not thread.is_alive():
                     threads.remove(thread)
-
         self.__generate_readme()
-
+        
     def get_cached_solved_ques(self):
-        if not os.environ.get('CACHED_SOLVED_QUES'): return
+        if not os.environ.get('CACHED_SOLVED_QUES'): return 
         pattern_name = re.compile('n(\d+)\. (.*)')
         for dir_name in os.listdir('.'):
             if not pattern_name.match(dir_name): continue
             self.cached_solved_quest[pattern_name.search(dir_name).group(2)] = True
-
+    
     def __generate_readme(self):
         pattern_name = re.compile('n(\d+)\. (.*)')
         question_level = {
@@ -176,7 +165,6 @@ class Leetcode:
         question_list = []
         for dir in os.listdir('.'):
             if not pattern_name.match(dir): continue
-            # 更新难度
             level = open('{}/README.md'.format(dir), 'r').readline().count(':star:')
             question_level[level] += 1
             question_list.append('{} {}'.format(dir, ':star:' * level))
@@ -197,14 +185,15 @@ class Leetcode:
                                                 medium_num=question_level[2],
                                                 hard_num=question_level[3],
                                                 solv_question_list=question_list))
+            
+        
+        
 
 
-if __name__ == '__main__':
+if __name__=="__main__":
     requests_cache.install_cache('leetcode')
     lc = Leetcode()
-
     lc.output_source()
-
     subprocess.run(["git", "add", "."])
-    subprocess.run(["git", "commit", "-m", "commit by crawler.py @abcdlsj at {}".format(datetime.now().strftime("%Y-%m-%d %H:%M"))])
+    subprocess.run(["git", "commit", "-m", "commit by leetcode.py @abcdlsj at {}".format(datetime.now().strftime("%Y-%m-%d %H:%M"))])
     subprocess.run(["git", "push", "-f", "origin", "master"])
