@@ -1,12 +1,13 @@
 
 ## Leetcode
-目前已解决的题目（34 个，其中简单25 个，中等9 个， 困难0 个）：
+目前已解决的题目（36 个，其中简单27 个，中等9 个， 困难0 个）：
 - [1. Two Sum *](https://github.com/abcdlsj/Leetcode/tree/master/n0001.%20Two%20Sum)
 - [3. Longest Substring Without Repeating Characters **](https://github.com/abcdlsj/Leetcode/tree/master/n0003.%20Longest%20Substring%20Without%20Repeating%20Characters)
 - [35. Search Insert Position *](https://github.com/abcdlsj/Leetcode/tree/master/n0035.%20Search%20Insert%20Position)
 - [53. Maximum Subarray *](https://github.com/abcdlsj/Leetcode/tree/master/n0053.%20Maximum%20Subarray)
 - [67. Add Binary *](https://github.com/abcdlsj/Leetcode/tree/master/n0067.%20Add%20Binary)
 - [69. Sqrt(x) *](https://github.com/abcdlsj/Leetcode/tree/master/n0069.%20Sqrt(x))
+- [70. Climbing Stairs *](https://github.com/abcdlsj/Leetcode/tree/master/n0070.%20Climbing%20Stairs)
 - [88. Merge Sorted Array *](https://github.com/abcdlsj/Leetcode/tree/master/n0088.%20Merge%20Sorted%20Array)
 - [104. Maximum Depth of Binary Tree *](https://github.com/abcdlsj/Leetcode/tree/master/n0104.%20Maximum%20Depth%20of%20Binary%20Tree)
 - [121. Best Time to Buy and Sell Stock *](https://github.com/abcdlsj/Leetcode/tree/master/n0121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock)
@@ -15,6 +16,7 @@
 - [137. Single Number II **](https://github.com/abcdlsj/Leetcode/tree/master/n0137.%20Single%20Number%20II)
 - [167. Two Sum II - Input array is sorted *](https://github.com/abcdlsj/Leetcode/tree/master/n0167.%20Two%20Sum%20II%20-%20Input%20array%20is%20sorted)
 - [169. Majority Element *](https://github.com/abcdlsj/Leetcode/tree/master/n0169.%20Majority%20Element)
+- [198. House Robber *](https://github.com/abcdlsj/Leetcode/tree/master/n0198.%20House%20Robber)
 - [204. Count Primes *](https://github.com/abcdlsj/Leetcode/tree/master/n0204.%20Count%20Primes)
 - [215. Kth Largest Element in an Array **](https://github.com/abcdlsj/Leetcode/tree/master/n0215.%20Kth%20Largest%20Element%20in%20an%20Array)
 - [240. Search a 2D Matrix II **](https://github.com/abcdlsj/Leetcode/tree/master/n0240.%20Search%20a%202D%20Matrix%20II)
