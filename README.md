@@ -1,6 +1,6 @@
 
 ## Leetcode
-目前已解决的题目（36 个，其中简单27 个，中等9 个， 困难0 个）：
+目前已解决的题目（40 个，其中简单29 个，中等11 个， 困难0 个）：
 - [1. Two Sum *](https://github.com/abcdlsj/Leetcode/tree/master/n0001.%20Two%20Sum)
 - [3. Longest Substring Without Repeating Characters **](https://github.com/abcdlsj/Leetcode/tree/master/n0003.%20Longest%20Substring%20Without%20Repeating%20Characters)
 - [35. Search Insert Position *](https://github.com/abcdlsj/Leetcode/tree/master/n0035.%20Search%20Insert%20Position)
@@ -23,6 +23,7 @@
 - [260. Single Number III **](https://github.com/abcdlsj/Leetcode/tree/master/n0260.%20Single%20Number%20III)
 - [287. Find the Duplicate Number **](https://github.com/abcdlsj/Leetcode/tree/master/n0287.%20Find%20the%20Duplicate%20Number)
 - [292. Nim Game *](https://github.com/abcdlsj/Leetcode/tree/master/n0292.%20Nim%20Game)
+- [303. Range Sum Query - Immutable *](https://github.com/abcdlsj/Leetcode/tree/master/n0303.%20Range%20Sum%20Query%20-%20Immutable)
 - [423. Reconstruct Original Digits from English **](https://github.com/abcdlsj/Leetcode/tree/master/n0423.%20Reconstruct%20Original%20Digits%20from%20English)
 - [434. Number of Segments in a String *](https://github.com/abcdlsj/Leetcode/tree/master/n0434.%20Number%20of%20Segments%20in%20a%20String)
 - [521. Longest Uncommon Subsequence I *](https://github.com/abcdlsj/Leetcode/tree/master/n0521.%20Longest%20Uncommon%20Subsequence%20I)
@@ -37,3 +38,6 @@
 - [1175. Prime Arrangements *](https://github.com/abcdlsj/Leetcode/tree/master/n1175.%20Prime%20Arrangements)
 - [1176. Diet Plan Performance *](https://github.com/abcdlsj/Leetcode/tree/master/n1176.%20Diet%20Plan%20Performance)
 - [1177. Can Make Palindrome from Substring **](https://github.com/abcdlsj/Leetcode/tree/master/n1177.%20Can%20Make%20Palindrome%20from%20Substring)
+- [1189. Maximum Number of Balloons *](https://github.com/abcdlsj/Leetcode/tree/master/n1189.%20Maximum%20Number%20of%20Balloons)
+- [1190. Reverse Substrings Between Each Pair of Parentheses **](https://github.com/abcdlsj/Leetcode/tree/master/n1190.%20Reverse%20Substrings%20Between%20Each%20Pair%20of%20Parentheses)
+- [1191. K-Concatenation Maximum Sum **](https://github.com/abcdlsj/Leetcode/tree/master/n1191.%20K-Concatenation%20Maximum%20Sum)
