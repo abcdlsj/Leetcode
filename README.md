@@ -1,6 +1,6 @@
 
 ## Leetcode
-目前已解决的题目（40 个，其中简单29 个，中等11 个， 困难0 个）：
+目前已解决的题目（43 个，其中简单32 个，中等11 个， 困难0 个）：
 - [1. Two Sum *](https://github.com/abcdlsj/Leetcode/tree/master/n0001.%20Two%20Sum)
 - [3. Longest Substring Without Repeating Characters **](https://github.com/abcdlsj/Leetcode/tree/master/n0003.%20Longest%20Substring%20Without%20Repeating%20Characters)
 - [35. Search Insert Position *](https://github.com/abcdlsj/Leetcode/tree/master/n0035.%20Search%20Insert%20Position)
@@ -30,10 +30,13 @@
 - [605. Can Place Flowers *](https://github.com/abcdlsj/Leetcode/tree/master/n0605.%20Can%20Place%20Flowers)
 - [700. Search in a Binary Search Tree *](https://github.com/abcdlsj/Leetcode/tree/master/n0700.%20Search%20in%20a%20Binary%20Search%20Tree)
 - [704. Binary Search *](https://github.com/abcdlsj/Leetcode/tree/master/n0704.%20Binary%20Search)
+- [746. Min Cost Climbing Stairs *](https://github.com/abcdlsj/Leetcode/tree/master/n0746.%20Min%20Cost%20Climbing%20Stairs)
+- [771. Jewels and Stones *](https://github.com/abcdlsj/Leetcode/tree/master/n0771.%20Jewels%20and%20Stones)
 - [830. Positions of Large Groups *](https://github.com/abcdlsj/Leetcode/tree/master/n0830.%20Positions%20of%20Large%20Groups)
 - [925. Long Pressed Name *](https://github.com/abcdlsj/Leetcode/tree/master/n0925.%20Long%20Pressed%20Name)
 - [949. Largest Time for Given Digits *](https://github.com/abcdlsj/Leetcode/tree/master/n0949.%20Largest%20Time%20for%20Given%20Digits)
 - [1037. Valid Boomerang *](https://github.com/abcdlsj/Leetcode/tree/master/n1037.%20Valid%20Boomerang)
+- [1108. Defanging an IP Address *](https://github.com/abcdlsj/Leetcode/tree/master/n1108.%20Defanging%20an%20IP%20Address)
 - [1170. Compare Strings by Frequency of the Smallest Character *](https://github.com/abcdlsj/Leetcode/tree/master/n1170.%20Compare%20Strings%20by%20Frequency%20of%20the%20Smallest%20Character)
 - [1175. Prime Arrangements *](https://github.com/abcdlsj/Leetcode/tree/master/n1175.%20Prime%20Arrangements)
 - [1176. Diet Plan Performance *](https://github.com/abcdlsj/Leetcode/tree/master/n1176.%20Diet%20Plan%20Performance)
