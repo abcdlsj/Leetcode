@@ -1,6 +1,6 @@
 
 ## Leetcode
-目前已解决的题目（43 个，其中简单32 个，中等11 个， 困难0 个）：
+目前已解决的题目（46 个，其中简单35 个，中等11 个， 困难0 个）：
 - [1. Two Sum *](https://github.com/abcdlsj/Leetcode/tree/master/n0001.%20Two%20Sum)
 - [3. Longest Substring Without Repeating Characters **](https://github.com/abcdlsj/Leetcode/tree/master/n0003.%20Longest%20Substring%20Without%20Repeating%20Characters)
 - [35. Search Insert Position *](https://github.com/abcdlsj/Leetcode/tree/master/n0035.%20Search%20Insert%20Position)
@@ -19,6 +19,7 @@
 - [198. House Robber *](https://github.com/abcdlsj/Leetcode/tree/master/n0198.%20House%20Robber)
 - [204. Count Primes *](https://github.com/abcdlsj/Leetcode/tree/master/n0204.%20Count%20Primes)
 - [215. Kth Largest Element in an Array **](https://github.com/abcdlsj/Leetcode/tree/master/n0215.%20Kth%20Largest%20Element%20in%20an%20Array)
+- [226. Invert Binary Tree *](https://github.com/abcdlsj/Leetcode/tree/master/n0226.%20Invert%20Binary%20Tree)
 - [240. Search a 2D Matrix II **](https://github.com/abcdlsj/Leetcode/tree/master/n0240.%20Search%20a%202D%20Matrix%20II)
 - [260. Single Number III **](https://github.com/abcdlsj/Leetcode/tree/master/n0260.%20Single%20Number%20III)
 - [287. Find the Duplicate Number **](https://github.com/abcdlsj/Leetcode/tree/master/n0287.%20Find%20the%20Duplicate%20Number)
@@ -26,8 +27,10 @@
 - [303. Range Sum Query - Immutable *](https://github.com/abcdlsj/Leetcode/tree/master/n0303.%20Range%20Sum%20Query%20-%20Immutable)
 - [423. Reconstruct Original Digits from English **](https://github.com/abcdlsj/Leetcode/tree/master/n0423.%20Reconstruct%20Original%20Digits%20from%20English)
 - [434. Number of Segments in a String *](https://github.com/abcdlsj/Leetcode/tree/master/n0434.%20Number%20of%20Segments%20in%20a%20String)
+- [461. Hamming Distance *](https://github.com/abcdlsj/Leetcode/tree/master/n0461.%20Hamming%20Distance)
 - [521. Longest Uncommon Subsequence I *](https://github.com/abcdlsj/Leetcode/tree/master/n0521.%20Longest%20Uncommon%20Subsequence%20I)
 - [605. Can Place Flowers *](https://github.com/abcdlsj/Leetcode/tree/master/n0605.%20Can%20Place%20Flowers)
+- [617. Merge Two Binary Trees *](https://github.com/abcdlsj/Leetcode/tree/master/n0617.%20Merge%20Two%20Binary%20Trees)
 - [700. Search in a Binary Search Tree *](https://github.com/abcdlsj/Leetcode/tree/master/n0700.%20Search%20in%20a%20Binary%20Search%20Tree)
 - [704. Binary Search *](https://github.com/abcdlsj/Leetcode/tree/master/n0704.%20Binary%20Search)
 - [746. Min Cost Climbing Stairs *](https://github.com/abcdlsj/Leetcode/tree/master/n0746.%20Min%20Cost%20Climbing%20Stairs)
