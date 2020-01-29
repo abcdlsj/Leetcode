@@ -123,7 +123,7 @@ class Leetcode:
                         question_content = self.get_question_content(question_["question_slug"])
                         if question_content['translatedContent'] is None: continue
                         src = CODE_TEMPLATE.format(code=src)
-                        dir_name = "n{}. {}".format(question_["question_id"], question_["question_title"])
+                        dir_name = "n{:0>4d}.{}".format(int(question_["question_id"]), question_["question_title"])
                         if not os.path.exists(dir_name):
                             os.mkdir(dir_name)
                         with open(os.path.join(dir_name, "main.{}".format(lang_suffix)), "w",encoding='utf-8') as f:
@@ -131,7 +131,7 @@ class Leetcode:
 
                         with open(os.path.join(dir_name, "README.md"), "w",encoding='utf-8') as f:
                             f.write(QUESTION_TEMPLATE.format(question_name = question_["question_title"],
-                                                             question_level = '*' * question_["question_difficulty"],
+                                                             question_level = '' * question_["question_difficulty"],
                                                              question_url = self.LEETCODE_URL + "/problems/{}".format(question_["question_slug"]),
                                                              runtime = submit["runtime"],
                                                              mem_usage = submit["memory"],
