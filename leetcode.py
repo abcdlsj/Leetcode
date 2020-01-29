@@ -136,7 +136,7 @@ class Leetcode:
                         if question_content['translatedContent'] is None:
                             continue
                         src = CODE_TEMPLATE.format(code=src)
-                        dir_name = "n{}.{}".format(question_["question_id"],
+                        dir_name = "n{:04d}.{}".format(question_["question_id"],
                                                    question_["question_title"])
                         if not os.path.exists(dir_name):
                             os.mkdir(dir_name)
