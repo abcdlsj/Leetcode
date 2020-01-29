@@ -1,4 +1,4 @@
-# Range Sum Query - Immutable 
+# Range Sum Query - Immutable *
 - 题目地址: [https://leetcode-cn.com/problems/range-sum-query-immutable](https://leetcode-cn.com/problems/range-sum-query-immutable)
 - 执行时间: 76 ms
 - 内存消耗: 17.3 MB

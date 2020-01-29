@@ -1,4 +1,4 @@
-# Powerful Integers 
+# Powerful Integers *
 - 题目地址: [https://leetcode-cn.com/problems/powerful-integers](https://leetcode-cn.com/problems/powerful-integers)
 - 执行时间: 4 ms
 - 内存消耗: 8.7 MB

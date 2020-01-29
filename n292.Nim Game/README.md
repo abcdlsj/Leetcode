@@ -1,4 +1,4 @@
-# Nim Game 
+# Nim Game *
 - 题目地址: [https://leetcode-cn.com/problems/nim-game](https://leetcode-cn.com/problems/nim-game)
 - 执行时间: 8 ms
 - 内存消耗: 8.1 MB

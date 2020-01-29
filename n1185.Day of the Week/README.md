@@ -1,4 +1,4 @@
-# Day of the Week 
+# Day of the Week *
 - 题目地址: [https://leetcode-cn.com/problems/day-of-the-week](https://leetcode-cn.com/problems/day-of-the-week)
 - 执行时间: 8 ms
 - 内存消耗: 8.1 MB

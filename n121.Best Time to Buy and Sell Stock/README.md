@@ -1,4 +1,4 @@
-# Best Time to Buy and Sell Stock 
+# Best Time to Buy and Sell Stock *
 - 题目地址: [https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock)
 - 执行时间: 20 ms
 - 内存消耗: 9.7 MB

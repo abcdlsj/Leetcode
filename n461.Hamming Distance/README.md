@@ -1,4 +1,4 @@
-# Hamming Distance 
+# Hamming Distance *
 - 题目地址: [https://leetcode-cn.com/problems/hamming-distance](https://leetcode-cn.com/problems/hamming-distance)
 - 执行时间: 4 ms
 - 内存消耗: 8.2 MB

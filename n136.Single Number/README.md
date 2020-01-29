@@ -1,4 +1,4 @@
-# Single Number 
+# Single Number *
 - 题目地址: [https://leetcode-cn.com/problems/single-number](https://leetcode-cn.com/problems/single-number)
 - 执行时间: 20 ms
 - 内存消耗: 9.7 MB

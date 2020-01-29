@@ -1,4 +1,4 @@
-# Binary Search 
+# Binary Search *
 - 题目地址: [https://leetcode-cn.com/problems/binary-search](https://leetcode-cn.com/problems/binary-search)
 - 执行时间: 68 ms
 - 内存消耗: 10.8 MB

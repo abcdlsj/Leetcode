@@ -1,4 +1,4 @@
-# Majority Element 
+# Majority Element *
 - 题目地址: [https://leetcode-cn.com/problems/majority-element](https://leetcode-cn.com/problems/majority-element)
 - 执行时间: 20 ms
 - 内存消耗: 11 MB

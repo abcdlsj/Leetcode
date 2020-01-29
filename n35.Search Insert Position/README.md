@@ -1,4 +1,4 @@
-# Search Insert Position 
+# Search Insert Position *
 - 题目地址: [https://leetcode-cn.com/problems/search-insert-position](https://leetcode-cn.com/problems/search-insert-position)
 - 执行时间: 16 ms
 - 内存消耗: 8.8 MB

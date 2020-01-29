@@ -1,4 +1,4 @@
-# Long Pressed Name 
+# Long Pressed Name *
 - 题目地址: [https://leetcode-cn.com/problems/long-pressed-name](https://leetcode-cn.com/problems/long-pressed-name)
 - 执行时间: 4 ms
 - 内存消耗: 8.5 MB

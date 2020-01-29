@@ -131,7 +131,7 @@ class Leetcode:
 
                         with open(os.path.join(dir_name, "README.md"), "w",encoding='utf-8') as f:
                             f.write(QUESTION_TEMPLATE.format(question_name = question_["question_title"],
-                                                             question_level = '' * question_["question_difficulty"],
+                                                             question_level = '*' * question_["question_difficulty"],
                                                              question_url = self.LEETCODE_URL + "/problems/{}".format(question_["question_slug"]),
                                                              runtime = submit["runtime"],
                                                              mem_usage = submit["memory"],

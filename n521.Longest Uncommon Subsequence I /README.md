@@ -1,4 +1,4 @@
-# Longest Uncommon Subsequence I  
+# Longest Uncommon Subsequence I  *
 - 题目地址: [https://leetcode-cn.com/problems/longest-uncommon-subsequence-i](https://leetcode-cn.com/problems/longest-uncommon-subsequence-i)
 - 执行时间: 8 ms
 - 内存消耗: 8.3 MB

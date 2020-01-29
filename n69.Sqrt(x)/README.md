@@ -1,4 +1,4 @@
-# Sqrt(x) 
+# Sqrt(x) *
 - 题目地址: [https://leetcode-cn.com/problems/sqrtx](https://leetcode-cn.com/problems/sqrtx)
 - 执行时间: 16 ms
 - 内存消耗: 8.2 MB

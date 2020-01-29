@@ -1,4 +1,4 @@
-# Count Primes 
+# Count Primes *
 - 题目地址: [https://leetcode-cn.com/problems/count-primes](https://leetcode-cn.com/problems/count-primes)
 - 执行时间: 116 ms
 - 内存消耗: 8.6 MB

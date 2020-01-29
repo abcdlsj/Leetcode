@@ -1,4 +1,4 @@
-# Number of Segments in a String 
+# Number of Segments in a String *
 - 题目地址: [https://leetcode-cn.com/problems/number-of-segments-in-a-string](https://leetcode-cn.com/problems/number-of-segments-in-a-string)
 - 执行时间: 4 ms
 - 内存消耗: 8.4 MB

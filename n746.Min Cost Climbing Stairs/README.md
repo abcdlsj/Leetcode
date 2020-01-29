@@ -1,4 +1,4 @@
-# Min Cost Climbing Stairs 
+# Min Cost Climbing Stairs *
 - 题目地址: [https://leetcode-cn.com/problems/min-cost-climbing-stairs](https://leetcode-cn.com/problems/min-cost-climbing-stairs)
 - 执行时间: 20 ms
 - 内存消耗: 8.9 MB
