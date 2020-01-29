@@ -32,7 +32,7 @@ REPO_README_TEMPLATE = """
 QUESTION_TEMPLATE = \
 """# {question_name} {question_level}
 - 题目地址: [{question_url}]({question_url})
-- 执行时间: {runtime} 
+- 执行时间: {runtime}
 - 内存消耗: {mem_usage}
 - 通过日期: {time}
 
@@ -123,7 +123,7 @@ class Leetcode:
                         question_content = self.get_question_content(question_["question_slug"])
                         if question_content['translatedContent'] is None: continue
                         src = CODE_TEMPLATE.format(code=src)
-                        dir_name = "n{:04d}. {}".format(question_["question_id"], question_["question_title"])
+                        dir_name = "n{}. {}".format(question_["question_id"], question_["question_title"])
                         if not os.path.exists(dir_name):
                             os.mkdir(dir_name)
                         with open(os.path.join(dir_name, "main.{}".format(lang_suffix)), "w",encoding='utf-8') as f:
@@ -200,8 +200,7 @@ if __name__ == '__main__':
     lc = Leetcode()
 
     lc.output_source()
-    
+
     subprocess.run(["git", "add", "."])
     subprocess.run(["git", "commit", "-m", "commit by leetcode_.py @abcdlsj at {}".format(datetime.now().strftime("%Y-%m-%d %H:%M"))])
     subprocess.run(["git", "push", "-f", "origin", "master"])
-    

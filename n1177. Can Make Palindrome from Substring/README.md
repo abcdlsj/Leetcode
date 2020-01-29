@@ -1,6 +1,6 @@
 # Can Make Palindrome from Substring **
 - 题目地址: [https://leetcode-cn.com/problems/can-make-palindrome-from-substring](https://leetcode-cn.com/problems/can-make-palindrome-from-substring)
-- 执行时间: 540 ms 
+- 执行时间: 540 ms
 - 内存消耗: 59.5 MB
 - 通过日期: 2019-09-01 22:31
 

@@ -1,6 +1,6 @@
 # Valid Boomerang *
 - 题目地址: [https://leetcode-cn.com/problems/valid-boomerang](https://leetcode-cn.com/problems/valid-boomerang)
-- 执行时间: 4 ms 
+- 执行时间: 4 ms
 - 内存消耗: 8.2 MB
 - 通过日期: 2019-08-26 16:24
 

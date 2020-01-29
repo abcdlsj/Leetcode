@@ -1,6 +1,6 @@
 # K-Concatenation Maximum Sum **
 - 题目地址: [https://leetcode-cn.com/problems/k-concatenation-maximum-sum](https://leetcode-cn.com/problems/k-concatenation-maximum-sum)
-- 执行时间: 104 ms 
+- 执行时间: 104 ms
 - 内存消耗: 14.1 MB
 - 通过日期: 2019-09-15 16:11
 

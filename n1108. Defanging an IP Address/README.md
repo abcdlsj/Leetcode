@@ -1,6 +1,6 @@
 # Defanging an IP Address *
 - 题目地址: [https://leetcode-cn.com/problems/defanging-an-ip-address](https://leetcode-cn.com/problems/defanging-an-ip-address)
-- 执行时间: 4 ms 
+- 执行时间: 4 ms
 - 内存消耗: 8.1 MB
 - 通过日期: 2019-09-18 11:13
 

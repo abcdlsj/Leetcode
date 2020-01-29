@@ -1,6 +1,6 @@
 # Compare Strings by Frequency of the Smallest Character *
 - 题目地址: [https://leetcode-cn.com/problems/compare-strings-by-frequency-of-the-smallest-character](https://leetcode-cn.com/problems/compare-strings-by-frequency-of-the-smallest-character)
-- 执行时间: 20 ms 
+- 执行时间: 20 ms
 - 内存消耗: 10.7 MB
 - 通过日期: 2019-08-25 20:51
 
