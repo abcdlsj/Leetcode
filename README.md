@@ -1,6 +1,6 @@
 
 ## Leetcode
-目前已解决的题目（53 个，其中简单40 个，中等13 个， 困难0 个）：
+目前已解决的题目（58 个，其中简单43 个，中等15 个， 困难0 个）：
 - [1. Two Sum *](https://github.com/abcdlsj/Leetcode/tree/master/n1.%20Two%20Sum)
 - [3. Longest Substring Without Repeating Characters **](https://github.com/abcdlsj/Leetcode/tree/master/n3.%20Longest%20Substring%20Without%20Repeating%20Characters)
 - [35. Search Insert Position *](https://github.com/abcdlsj/Leetcode/tree/master/n35.%20Search%20Insert%20Position)
@@ -18,6 +18,7 @@
 - [169. Majority Element *](https://github.com/abcdlsj/Leetcode/tree/master/n169.%20Majority%20Element)
 - [198. House Robber *](https://github.com/abcdlsj/Leetcode/tree/master/n198.%20House%20Robber)
 - [204. Count Primes *](https://github.com/abcdlsj/Leetcode/tree/master/n204.%20Count%20Primes)
+- [205. Isomorphic Strings *](https://github.com/abcdlsj/Leetcode/tree/master/n205.%20Isomorphic%20Strings)
 - [215. Kth Largest Element in an Array **](https://github.com/abcdlsj/Leetcode/tree/master/n215.%20Kth%20Largest%20Element%20in%20an%20Array)
 - [226. Invert Binary Tree *](https://github.com/abcdlsj/Leetcode/tree/master/n226.%20Invert%20Binary%20Tree)
 - [240. Search a 2D Matrix II **](https://github.com/abcdlsj/Leetcode/tree/master/n240.%20Search%20a%202D%20Matrix%20II)
@@ -51,6 +52,10 @@
 - [1191. K-Concatenation Maximum Sum **](https://github.com/abcdlsj/Leetcode/tree/master/n1191.%20K-Concatenation%20Maximum%20Sum)
 - [1200. Minimum Absolute Difference *](https://github.com/abcdlsj/Leetcode/tree/master/n1200.%20Minimum%20Absolute%20Difference)
 - [1323. Maximum 69 Number *](https://github.com/abcdlsj/Leetcode/tree/master/n1323.%20Maximum%2069%20Number)
+- [1342. Number of Steps to Reduce a Number to Zero *](https://github.com/abcdlsj/Leetcode/tree/master/n1342.%20Number%20of%20Steps%20to%20Reduce%20a%20Number%20to%20Zero)
+- [1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold **](https://github.com/abcdlsj/Leetcode/tree/master/n1343.%20Number%20of%20Sub-arrays%20of%20Size%20K%20and%20Average%20Greater%20than%20or%20Equal%20to%20Threshold)
+- [1344. Angle Between Hands of a Clock **](https://github.com/abcdlsj/Leetcode/tree/master/n1344.%20Angle%20Between%20Hands%20of%20a%20Clock)
+- [1346. Check If N and Its Double Exist *](https://github.com/abcdlsj/Leetcode/tree/master/n1346.%20Check%20If%20N%20and%20Its%20Double%20Exist)
 - [5311. Number of Steps to Reduce a Number to Zero *](https://github.com/abcdlsj/Leetcode/tree/master/n5311.%20Number%20of%20Steps%20to%20Reduce%20a%20Number%20to%20Zero)
 - [5312. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold **](https://github.com/abcdlsj/Leetcode/tree/master/n5312.%20Number%20of%20Sub-arrays%20of%20Size%20K%20and%20Average%20Greater%20than%20or%20Equal%20to%20Threshold)
 - [5313. Angle Between Hands of a Clock **](https://github.com/abcdlsj/Leetcode/tree/master/n5313.%20Angle%20Between%20Hands%20of%20a%20Clock)
