@@ -1,6 +1,6 @@
 
 ## Leetcode
-目前已解决的题目（58 个，其中简单43 个，中等15 个， 困难0 个）：
+目前已解决的题目（60 个，其中简单44 个，中等16 个， 困难0 个）：
 - [1. Two Sum *](https://github.com/abcdlsj/Leetcode/tree/master/n1.%20Two%20Sum)
 - [3. Longest Substring Without Repeating Characters **](https://github.com/abcdlsj/Leetcode/tree/master/n3.%20Longest%20Substring%20Without%20Repeating%20Characters)
 - [35. Search Insert Position *](https://github.com/abcdlsj/Leetcode/tree/master/n35.%20Search%20Insert%20Position)
@@ -59,3 +59,5 @@
 - [5311. Number of Steps to Reduce a Number to Zero *](https://github.com/abcdlsj/Leetcode/tree/master/n5311.%20Number%20of%20Steps%20to%20Reduce%20a%20Number%20to%20Zero)
 - [5312. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold **](https://github.com/abcdlsj/Leetcode/tree/master/n5312.%20Number%20of%20Sub-arrays%20of%20Size%20K%20and%20Average%20Greater%20than%20or%20Equal%20to%20Threshold)
 - [5313. Angle Between Hands of a Clock **](https://github.com/abcdlsj/Leetcode/tree/master/n5313.%20Angle%20Between%20Hands%20of%20a%20Clock)
+- [5340. Count Negative Numbers in a Sorted Matrix *](https://github.com/abcdlsj/Leetcode/tree/master/n5340.%20Count%20Negative%20Numbers%20in%20a%20Sorted%20Matrix)
+- [5341. Product of the Last K Numbers **](https://github.com/abcdlsj/Leetcode/tree/master/n5341.%20Product%20of%20the%20Last%20K%20Numbers)
