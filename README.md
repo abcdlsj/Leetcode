@@ -1,6 +1,6 @@
 
 ## Leetcode
-目前已解决的题目（63 个，其中简单46 个，中等17 个， 困难0 个）：
+目前已解决的题目（66 个，其中简单48 个，中等18 个， 困难0 个）：
 - [1. Two Sum *](https://github.com/abcdlsj/Leetcode/tree/master/n1.%20Two%20Sum)
 - [3. Longest Substring Without Repeating Characters **](https://github.com/abcdlsj/Leetcode/tree/master/n3.%20Longest%20Substring%20Without%20Repeating%20Characters)
 - [35. Search Insert Position *](https://github.com/abcdlsj/Leetcode/tree/master/n35.%20Search%20Insert%20Position)
@@ -10,6 +10,8 @@
 - [70. Climbing Stairs *](https://github.com/abcdlsj/Leetcode/tree/master/n70.%20Climbing%20Stairs)
 - [88. Merge Sorted Array *](https://github.com/abcdlsj/Leetcode/tree/master/n88.%20Merge%20Sorted%20Array)
 - [104. Maximum Depth of Binary Tree *](https://github.com/abcdlsj/Leetcode/tree/master/n104.%20Maximum%20Depth%20of%20Binary%20Tree)
+- [108. Convert Sorted Array to Binary Search Tree *](https://github.com/abcdlsj/Leetcode/tree/master/n108.%20Convert%20Sorted%20Array%20to%20Binary%20Search%20Tree)
+- [109. Convert Sorted List to Binary Search Tree **](https://github.com/abcdlsj/Leetcode/tree/master/n109.%20Convert%20Sorted%20List%20to%20Binary%20Search%20Tree)
 - [121. Best Time to Buy and Sell Stock *](https://github.com/abcdlsj/Leetcode/tree/master/n121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock)
 - [134. Gas Station **](https://github.com/abcdlsj/Leetcode/tree/master/n134.%20Gas%20Station)
 - [136. Single Number *](https://github.com/abcdlsj/Leetcode/tree/master/n136.%20Single%20Number)
@@ -58,6 +60,7 @@
 - [1346. Check If N and Its Double Exist *](https://github.com/abcdlsj/Leetcode/tree/master/n1346.%20Check%20If%20N%20and%20Its%20Double%20Exist)
 - [1351. Count Negative Numbers in a Sorted Matrix *](https://github.com/abcdlsj/Leetcode/tree/master/n1351.%20Count%20Negative%20Numbers%20in%20a%20Sorted%20Matrix)
 - [1352. Product of the Last K Numbers **](https://github.com/abcdlsj/Leetcode/tree/master/n1352.%20Product%20of%20the%20Last%20K%20Numbers)
+- [1356. Sort Integers by The Number of 1 Bits *](https://github.com/abcdlsj/Leetcode/tree/master/n1356.%20Sort%20Integers%20by%20The%20Number%20of%201%20Bits)
 - [5311. Number of Steps to Reduce a Number to Zero *](https://github.com/abcdlsj/Leetcode/tree/master/n5311.%20Number%20of%20Steps%20to%20Reduce%20a%20Number%20to%20Zero)
 - [5312. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold **](https://github.com/abcdlsj/Leetcode/tree/master/n5312.%20Number%20of%20Sub-arrays%20of%20Size%20K%20and%20Average%20Greater%20than%20or%20Equal%20to%20Threshold)
 - [5313. Angle Between Hands of a Clock **](https://github.com/abcdlsj/Leetcode/tree/master/n5313.%20Angle%20Between%20Hands%20of%20a%20Clock)
