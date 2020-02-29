@@ -1,6 +1,6 @@
 
 ## Leetcode
-目前已解决的题目（68 个，其中简单49 个，中等19 个， 困难0 个）：
+目前已解决的题目（70 个，其中简单50 个，中等20 个， 困难0 个）：
 - [1. Two Sum *](https://github.com/abcdlsj/Leetcode/tree/master/n1.%20Two%20Sum)
 - [3. Longest Substring Without Repeating Characters **](https://github.com/abcdlsj/Leetcode/tree/master/n3.%20Longest%20Substring%20Without%20Repeating%20Characters)
 - [35. Search Insert Position *](https://github.com/abcdlsj/Leetcode/tree/master/n35.%20Search%20Insert%20Position)
@@ -39,6 +39,7 @@
 - [746. Min Cost Climbing Stairs *](https://github.com/abcdlsj/Leetcode/tree/master/n746.%20Min%20Cost%20Climbing%20Stairs)
 - [771. Jewels and Stones *](https://github.com/abcdlsj/Leetcode/tree/master/n771.%20Jewels%20and%20Stones)
 - [830. Positions of Large Groups *](https://github.com/abcdlsj/Leetcode/tree/master/n830.%20Positions%20of%20Large%20Groups)
+- [905. Sort Array By Parity *](https://github.com/abcdlsj/Leetcode/tree/master/n905.%20Sort%20Array%20By%20Parity)
 - [925. Long Pressed Name *](https://github.com/abcdlsj/Leetcode/tree/master/n925.%20Long%20Pressed%20Name)
 - [949. Largest Time for Given Digits *](https://github.com/abcdlsj/Leetcode/tree/master/n949.%20Largest%20Time%20for%20Given%20Digits)
 - [970. Powerful Integers *](https://github.com/abcdlsj/Leetcode/tree/master/n970.%20Powerful%20Integers)
@@ -62,6 +63,7 @@
 - [1352. Product of the Last K Numbers **](https://github.com/abcdlsj/Leetcode/tree/master/n1352.%20Product%20of%20the%20Last%20K%20Numbers)
 - [1356. Sort Integers by The Number of 1 Bits *](https://github.com/abcdlsj/Leetcode/tree/master/n1356.%20Sort%20Integers%20by%20The%20Number%20of%201%20Bits)
 - [1360. Number of Days Between Two Dates *](https://github.com/abcdlsj/Leetcode/tree/master/n1360.%20Number%20of%20Days%20Between%20Two%20Dates)
+- [1361. Validate Binary Tree Nodes **](https://github.com/abcdlsj/Leetcode/tree/master/n1361.%20Validate%20Binary%20Tree%20Nodes)
 - [1362. Closest Divisors **](https://github.com/abcdlsj/Leetcode/tree/master/n1362.%20Closest%20Divisors)
 - [5311. Number of Steps to Reduce a Number to Zero *](https://github.com/abcdlsj/Leetcode/tree/master/n5311.%20Number%20of%20Steps%20to%20Reduce%20a%20Number%20to%20Zero)
 - [5312. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold **](https://github.com/abcdlsj/Leetcode/tree/master/n5312.%20Number%20of%20Sub-arrays%20of%20Size%20K%20and%20Average%20Greater%20than%20or%20Equal%20to%20Threshold)
