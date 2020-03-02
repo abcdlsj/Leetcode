@@ -1,13 +1,15 @@
 
 ## Leetcode
-目前已解决的题目（70 个，其中简单50 个，中等20 个， 困难0 个）：
+目前已解决的题目（73 个，其中简单51 个，中等22 个， 困难0 个）：
 - [1. Two Sum *](https://github.com/abcdlsj/Leetcode/tree/master/n1.%20Two%20Sum)
+- [2. Add Two Numbers **](https://github.com/abcdlsj/Leetcode/tree/master/n2.%20Add%20Two%20Numbers)
 - [3. Longest Substring Without Repeating Characters **](https://github.com/abcdlsj/Leetcode/tree/master/n3.%20Longest%20Substring%20Without%20Repeating%20Characters)
 - [35. Search Insert Position *](https://github.com/abcdlsj/Leetcode/tree/master/n35.%20Search%20Insert%20Position)
 - [53. Maximum Subarray *](https://github.com/abcdlsj/Leetcode/tree/master/n53.%20Maximum%20Subarray)
 - [67. Add Binary *](https://github.com/abcdlsj/Leetcode/tree/master/n67.%20Add%20Binary)
 - [69. Sqrt(x) *](https://github.com/abcdlsj/Leetcode/tree/master/n69.%20Sqrt(x))
 - [70. Climbing Stairs *](https://github.com/abcdlsj/Leetcode/tree/master/n70.%20Climbing%20Stairs)
+- [78. Subsets **](https://github.com/abcdlsj/Leetcode/tree/master/n78.%20Subsets)
 - [88. Merge Sorted Array *](https://github.com/abcdlsj/Leetcode/tree/master/n88.%20Merge%20Sorted%20Array)
 - [104. Maximum Depth of Binary Tree *](https://github.com/abcdlsj/Leetcode/tree/master/n104.%20Maximum%20Depth%20of%20Binary%20Tree)
 - [108. Convert Sorted Array to Binary Search Tree *](https://github.com/abcdlsj/Leetcode/tree/master/n108.%20Convert%20Sorted%20Array%20to%20Binary%20Search%20Tree)
@@ -24,6 +26,7 @@
 - [215. Kth Largest Element in an Array **](https://github.com/abcdlsj/Leetcode/tree/master/n215.%20Kth%20Largest%20Element%20in%20an%20Array)
 - [226. Invert Binary Tree *](https://github.com/abcdlsj/Leetcode/tree/master/n226.%20Invert%20Binary%20Tree)
 - [240. Search a 2D Matrix II **](https://github.com/abcdlsj/Leetcode/tree/master/n240.%20Search%20a%202D%20Matrix%20II)
+- [242. Valid Anagram *](https://github.com/abcdlsj/Leetcode/tree/master/n242.%20Valid%20Anagram)
 - [260. Single Number III **](https://github.com/abcdlsj/Leetcode/tree/master/n260.%20Single%20Number%20III)
 - [287. Find the Duplicate Number **](https://github.com/abcdlsj/Leetcode/tree/master/n287.%20Find%20the%20Duplicate%20Number)
 - [292. Nim Game *](https://github.com/abcdlsj/Leetcode/tree/master/n292.%20Nim%20Game)

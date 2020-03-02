@@ -1,8 +1,8 @@
 # Two Sum *
 - 题目地址: [https://leetcode-cn.com/problems/two-sum](https://leetcode-cn.com/problems/two-sum)
-- 执行时间: 540 ms
-- 内存消耗: 9 MB
-- 通过日期: 2019-09-13 17:37
+- 执行时间: 532 ms
+- 内存消耗: 9.1 MB
+- 通过日期: 2019-09-14 13:16
 
 ## 题目内容
 <p>给定一个整数数组 <code>nums</code> 和一个目标值 <code>target</code>，请你在该数组中找出和为目标值的那 <strong>两个</strong> 整数，并返回他们的数组下标。</p>
