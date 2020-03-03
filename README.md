@@ -1,6 +1,6 @@
 
 ## Leetcode
-目前已解决的题目（73 个，其中简单51 个，中等22 个， 困难0 个）：
+目前已解决的题目（75 个，其中简单52 个，中等23 个， 困难0 个）：
 - [1. Two Sum *](https://github.com/abcdlsj/Leetcode/tree/master/n1.%20Two%20Sum)
 - [2. Add Two Numbers **](https://github.com/abcdlsj/Leetcode/tree/master/n2.%20Add%20Two%20Numbers)
 - [3. Longest Substring Without Repeating Characters **](https://github.com/abcdlsj/Leetcode/tree/master/n3.%20Longest%20Substring%20Without%20Repeating%20Characters)
@@ -23,6 +23,7 @@
 - [198. House Robber *](https://github.com/abcdlsj/Leetcode/tree/master/n198.%20House%20Robber)
 - [204. Count Primes *](https://github.com/abcdlsj/Leetcode/tree/master/n204.%20Count%20Primes)
 - [205. Isomorphic Strings *](https://github.com/abcdlsj/Leetcode/tree/master/n205.%20Isomorphic%20Strings)
+- [206. Reverse Linked List *](https://github.com/abcdlsj/Leetcode/tree/master/n206.%20Reverse%20Linked%20List)
 - [215. Kth Largest Element in an Array **](https://github.com/abcdlsj/Leetcode/tree/master/n215.%20Kth%20Largest%20Element%20in%20an%20Array)
 - [226. Invert Binary Tree *](https://github.com/abcdlsj/Leetcode/tree/master/n226.%20Invert%20Binary%20Tree)
 - [240. Search a 2D Matrix II **](https://github.com/abcdlsj/Leetcode/tree/master/n240.%20Search%20a%202D%20Matrix%20II)
@@ -43,6 +44,7 @@
 - [771. Jewels and Stones *](https://github.com/abcdlsj/Leetcode/tree/master/n771.%20Jewels%20and%20Stones)
 - [830. Positions of Large Groups *](https://github.com/abcdlsj/Leetcode/tree/master/n830.%20Positions%20of%20Large%20Groups)
 - [905. Sort Array By Parity *](https://github.com/abcdlsj/Leetcode/tree/master/n905.%20Sort%20Array%20By%20Parity)
+- [912. Sort an Array **](https://github.com/abcdlsj/Leetcode/tree/master/n912.%20Sort%20an%20Array)
 - [925. Long Pressed Name *](https://github.com/abcdlsj/Leetcode/tree/master/n925.%20Long%20Pressed%20Name)
 - [949. Largest Time for Given Digits *](https://github.com/abcdlsj/Leetcode/tree/master/n949.%20Largest%20Time%20for%20Given%20Digits)
 - [970. Powerful Integers *](https://github.com/abcdlsj/Leetcode/tree/master/n970.%20Powerful%20Integers)
