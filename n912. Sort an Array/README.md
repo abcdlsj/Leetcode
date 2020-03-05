@@ -1,8 +1,8 @@
 # Sort an Array **
 - 题目地址: [https://leetcode-cn.com/problems/sort-an-array](https://leetcode-cn.com/problems/sort-an-array)
-- 执行时间: 24 ms
-- 内存消耗: 17.9 MB
-- 通过日期: 2020-03-03 15:09
+- 执行时间: 208 ms
+- 内存消耗: 96.4 MB
+- 通过日期: 2020-03-04 10:10
 
 ## 题目内容
 <p>给定一个整数数组 <code>nums</code>，将该数组升序排列。</p>
@@ -78,10 +78,40 @@ public:
             nums[j+1] = tmp;
         }
     }
+    //归并
+    void merge(vector<int> &Array, int front, int mid, int end) {
+        vector<int> LeftSubArray(Array.begin() + front, Array.begin() + mid + 1);
+        vector<int> RightSubArray(Array.begin() + mid + 1, Array.begin() + end + 1);
+
+        int idxLeft = 0, idxRight = 0;
+        LeftSubArray.insert(LeftSubArray.end(), numeric_limits<int>::max());
+        RightSubArray.insert(RightSubArray.end(), numeric_limits<int>::max());
+
+        for(int i = front; i <= end; i++){
+            if(LeftSubArray[idxLeft] < RightSubArray[idxRight]) {
+                Array[i] = LeftSubArray[idxLeft];
+                idxLeft ++; 
+            } else {
+                Array[i] = RightSubArray[idxRight];
+                idxRight ++;
+            }
+        }
+    }
+
+    void MergeSort(vector<int> &Array, int front, int end) {
+        if(front >= end) return;
+        int mid = front + (end - front) / 2;
+        MergeSort(Array, front, mid);
+        MergeSort(Array, mid + 1, end);
+        merge(Array, front, mid, end); 
+    }
+
+
     vector<int> sortArray(vector<int>& nums) {
-        quick_sort(nums, 0, nums.size() - 1);
+        // quick_sort(nums, 0, nums.size() - 1);
         // bubble_sort(nums);
         // insertion_sort(nums);
+        MergeSort(nums, 0, nums.size() - 1);
         return nums;
     }
 };
