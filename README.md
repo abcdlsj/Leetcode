@@ -1,6 +1,6 @@
 
 ## Leetcode
-目前已解决的题目（75 个，其中简单52 个，中等23 个， 困难0 个）：
+目前已解决的题目（78 个，其中简单54 个，中等24 个， 困难0 个）：
 - [1. Two Sum *](https://github.com/abcdlsj/Leetcode/tree/master/n1.%20Two%20Sum)
 - [2. Add Two Numbers **](https://github.com/abcdlsj/Leetcode/tree/master/n2.%20Add%20Two%20Numbers)
 - [3. Longest Substring Without Repeating Characters **](https://github.com/abcdlsj/Leetcode/tree/master/n3.%20Longest%20Substring%20Without%20Repeating%20Characters)
@@ -32,6 +32,7 @@
 - [287. Find the Duplicate Number **](https://github.com/abcdlsj/Leetcode/tree/master/n287.%20Find%20the%20Duplicate%20Number)
 - [292. Nim Game *](https://github.com/abcdlsj/Leetcode/tree/master/n292.%20Nim%20Game)
 - [303. Range Sum Query - Immutable *](https://github.com/abcdlsj/Leetcode/tree/master/n303.%20Range%20Sum%20Query%20-%20Immutable)
+- [344. Reverse String *](https://github.com/abcdlsj/Leetcode/tree/master/n344.%20Reverse%20String)
 - [423. Reconstruct Original Digits from English **](https://github.com/abcdlsj/Leetcode/tree/master/n423.%20Reconstruct%20Original%20Digits%20from%20English)
 - [434. Number of Segments in a String *](https://github.com/abcdlsj/Leetcode/tree/master/n434.%20Number%20of%20Segments%20in%20a%20String)
 - [461. Hamming Distance *](https://github.com/abcdlsj/Leetcode/tree/master/n461.%20Hamming%20Distance)
@@ -74,5 +75,7 @@
 - [5312. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold **](https://github.com/abcdlsj/Leetcode/tree/master/n5312.%20Number%20of%20Sub-arrays%20of%20Size%20K%20and%20Average%20Greater%20than%20or%20Equal%20to%20Threshold)
 - [5313. Angle Between Hands of a Clock **](https://github.com/abcdlsj/Leetcode/tree/master/n5313.%20Angle%20Between%20Hands%20of%20a%20Clock)
 - [5323. Sort Integers by The Number of 1 Bits *](https://github.com/abcdlsj/Leetcode/tree/master/n5323.%20Sort%20Integers%20by%20The%20Number%20of%201%20Bits)
+- [5336. Increasing Decreasing String *](https://github.com/abcdlsj/Leetcode/tree/master/n5336.%20Increasing%20Decreasing%20String)
+- [5337. Find the Longest Substring Containing Vowels in Even Counts **](https://github.com/abcdlsj/Leetcode/tree/master/n5337.%20Find%20the%20Longest%20Substring%20Containing%20Vowels%20in%20Even%20Counts)
 - [5340. Count Negative Numbers in a Sorted Matrix *](https://github.com/abcdlsj/Leetcode/tree/master/n5340.%20Count%20Negative%20Numbers%20in%20a%20Sorted%20Matrix)
 - [5341. Product of the Last K Numbers **](https://github.com/abcdlsj/Leetcode/tree/master/n5341.%20Product%20of%20the%20Last%20K%20Numbers)
