@@ -1,9 +1,10 @@
 
 ## Leetcode
-目前已解决的题目（78 个，其中简单54 个，中等24 个， 困难0 个）：
+目前已解决的题目（83 个，其中简单57 个，中等26 个， 困难0 个）：
 - [1. Two Sum *](https://github.com/abcdlsj/Leetcode/tree/master/n1.%20Two%20Sum)
 - [2. Add Two Numbers **](https://github.com/abcdlsj/Leetcode/tree/master/n2.%20Add%20Two%20Numbers)
 - [3. Longest Substring Without Repeating Characters **](https://github.com/abcdlsj/Leetcode/tree/master/n3.%20Longest%20Substring%20Without%20Repeating%20Characters)
+- [7. Reverse Integer *](https://github.com/abcdlsj/Leetcode/tree/master/n7.%20Reverse%20Integer)
 - [35. Search Insert Position *](https://github.com/abcdlsj/Leetcode/tree/master/n35.%20Search%20Insert%20Position)
 - [53. Maximum Subarray *](https://github.com/abcdlsj/Leetcode/tree/master/n53.%20Maximum%20Subarray)
 - [67. Add Binary *](https://github.com/abcdlsj/Leetcode/tree/master/n67.%20Add%20Binary)
@@ -18,6 +19,7 @@
 - [134. Gas Station **](https://github.com/abcdlsj/Leetcode/tree/master/n134.%20Gas%20Station)
 - [136. Single Number *](https://github.com/abcdlsj/Leetcode/tree/master/n136.%20Single%20Number)
 - [137. Single Number II **](https://github.com/abcdlsj/Leetcode/tree/master/n137.%20Single%20Number%20II)
+- [141. Linked List Cycle *](https://github.com/abcdlsj/Leetcode/tree/master/n141.%20Linked%20List%20Cycle)
 - [167. Two Sum II - Input array is sorted *](https://github.com/abcdlsj/Leetcode/tree/master/n167.%20Two%20Sum%20II%20-%20Input%20array%20is%20sorted)
 - [169. Majority Element *](https://github.com/abcdlsj/Leetcode/tree/master/n169.%20Majority%20Element)
 - [198. House Robber *](https://github.com/abcdlsj/Leetcode/tree/master/n198.%20House%20Robber)
@@ -32,6 +34,7 @@
 - [287. Find the Duplicate Number **](https://github.com/abcdlsj/Leetcode/tree/master/n287.%20Find%20the%20Duplicate%20Number)
 - [292. Nim Game *](https://github.com/abcdlsj/Leetcode/tree/master/n292.%20Nim%20Game)
 - [303. Range Sum Query - Immutable *](https://github.com/abcdlsj/Leetcode/tree/master/n303.%20Range%20Sum%20Query%20-%20Immutable)
+- [322. Coin Change **](https://github.com/abcdlsj/Leetcode/tree/master/n322.%20Coin%20Change)
 - [344. Reverse String *](https://github.com/abcdlsj/Leetcode/tree/master/n344.%20Reverse%20String)
 - [423. Reconstruct Original Digits from English **](https://github.com/abcdlsj/Leetcode/tree/master/n423.%20Reconstruct%20Original%20Digits%20from%20English)
 - [434. Number of Segments in a String *](https://github.com/abcdlsj/Leetcode/tree/master/n434.%20Number%20of%20Segments%20in%20a%20String)
@@ -71,6 +74,8 @@
 - [1360. Number of Days Between Two Dates *](https://github.com/abcdlsj/Leetcode/tree/master/n1360.%20Number%20of%20Days%20Between%20Two%20Dates)
 - [1361. Validate Binary Tree Nodes **](https://github.com/abcdlsj/Leetcode/tree/master/n1361.%20Validate%20Binary%20Tree%20Nodes)
 - [1362. Closest Divisors **](https://github.com/abcdlsj/Leetcode/tree/master/n1362.%20Closest%20Divisors)
+- [1370. Increasing Decreasing String *](https://github.com/abcdlsj/Leetcode/tree/master/n1370.%20Increasing%20Decreasing%20String)
+- [1371. Find the Longest Substring Containing Vowels in Even Counts **](https://github.com/abcdlsj/Leetcode/tree/master/n1371.%20Find%20the%20Longest%20Substring%20Containing%20Vowels%20in%20Even%20Counts)
 - [5311. Number of Steps to Reduce a Number to Zero *](https://github.com/abcdlsj/Leetcode/tree/master/n5311.%20Number%20of%20Steps%20to%20Reduce%20a%20Number%20to%20Zero)
 - [5312. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold **](https://github.com/abcdlsj/Leetcode/tree/master/n5312.%20Number%20of%20Sub-arrays%20of%20Size%20K%20and%20Average%20Greater%20than%20or%20Equal%20to%20Threshold)
 - [5313. Angle Between Hands of a Clock **](https://github.com/abcdlsj/Leetcode/tree/master/n5313.%20Angle%20Between%20Hands%20of%20a%20Clock)

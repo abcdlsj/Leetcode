@@ -5,14 +5,18 @@
 - 通过日期: 2019-08-27 10:47
 
 ## 题目内容
-<p>给定两个有序整数数组 <em>nums1 </em>和 <em>nums2</em>，将 <em>nums2 </em>合并到 <em>nums1 </em>中<em>，</em>使得 <em>num1 </em>成为一个有序数组。</p>
+<p>给你两个有序整数数组 <em>nums1 </em>和 <em>nums2</em>，请你将 <em>nums2 </em>合并到 <em>nums1 </em>中<em>，</em>使 <em>num1 </em>成为一个有序数组。</p>
+
+
 
 <p><strong>说明:</strong></p>
 
 <ul>
-	<li>初始化 <em>nums1</em> 和 <em>nums2</em> 的元素数量分别为 <em>m</em> 和 <em>n</em>。</li>
+	<li>初始化 <em>nums1</em> 和 <em>nums2</em> 的元素数量分别为 <em>m</em> 和 <em>n </em>。</li>
 	<li>你可以假设 <em>nums1 </em>有足够的空间（空间大小大于或等于 <em>m + n</em>）来保存 <em>nums2</em> 中的元素。</li>
 </ul>
+
+
 
 <p><strong>示例:</strong></p>
 

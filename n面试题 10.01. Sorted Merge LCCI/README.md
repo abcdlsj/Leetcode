@@ -17,6 +17,12 @@ B = [2,5,6],       n = 3
 
 <strong>输出:</strong> [1,2,2,3,5,6]</pre>
 
+<p><strong>说明:</strong></p>
+
+<ul>
+	<li><code>A.length == n + m</code></li>
+</ul>
+
 
 ## 解法
 ```cpp
