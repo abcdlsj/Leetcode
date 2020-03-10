@@ -3,22 +3,19 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& numbers, int target) {
-        vector<int> cpr(numbers.size());
-        vector<int> res;
-        if(numbers.size() == 0) return res;
-        for(int i = 0; i < numbers.size(); ++i) {
-            cpr[i] = target - numbers[i];
-        }
-        int i = 0, j = numbers.size() - 1;
-        while(i < j) {
-            if(numbers[i] == cpr[j]) {
-                res.push_back(i+1);
-                res.push_back(j+1);
-                return res;
+        int n=numbers.size();
+        int i=0,j=n-1;
+        vector<int> ans;
+        while(i<j){
+            int sum = numbers[i]+numbers[j];
+            if(sum == target){
+                ans.push_back(i+1);
+                ans.push_back(j+1);
+                return ans;
             }
-            else if(cpr[j] < numbers[i]) -- j;
-            else ++ i;
-       }
-       return res;
+            if(sum < target) i++;
+            else j--;
+        }
+        return ans;
     }
 };
