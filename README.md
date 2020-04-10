@@ -1,6 +1,6 @@
 
 ## Leetcode
-目前已解决的题目（123 个，其中简单71 个，中等49 个， 困难3 个）：
+目前已解决的题目（125 个，其中简单71 个，中等51 个， 困难3 个）：
 - [1. Two Sum *](https://github.com/abcdlsj/Leetcode/tree/master/n1.%20Two%20Sum)
 - [2. Add Two Numbers **](https://github.com/abcdlsj/Leetcode/tree/master/n2.%20Add%20Two%20Numbers)
 - [3. Longest Substring Without Repeating Characters **](https://github.com/abcdlsj/Leetcode/tree/master/n3.%20Longest%20Substring%20Without%20Repeating%20Characters)
@@ -60,6 +60,7 @@
 - [292. Nim Game *](https://github.com/abcdlsj/Leetcode/tree/master/n292.%20Nim%20Game)
 - [303. Range Sum Query - Immutable *](https://github.com/abcdlsj/Leetcode/tree/master/n303.%20Range%20Sum%20Query%20-%20Immutable)
 - [322. Coin Change **](https://github.com/abcdlsj/Leetcode/tree/master/n322.%20Coin%20Change)
+- [343. Integer Break **](https://github.com/abcdlsj/Leetcode/tree/master/n343.%20Integer%20Break)
 - [344. Reverse String *](https://github.com/abcdlsj/Leetcode/tree/master/n344.%20Reverse%20String)
 - [365. Water and Jug Problem **](https://github.com/abcdlsj/Leetcode/tree/master/n365.%20Water%20and%20Jug%20Problem)
 - [409. Longest Palindrome *](https://github.com/abcdlsj/Leetcode/tree/master/n409.%20Longest%20Palindrome)
@@ -74,6 +75,7 @@
 - [700. Search in a Binary Search Tree *](https://github.com/abcdlsj/Leetcode/tree/master/n700.%20Search%20in%20a%20Binary%20Search%20Tree)
 - [704. Binary Search *](https://github.com/abcdlsj/Leetcode/tree/master/n704.%20Binary%20Search)
 - [746. Min Cost Climbing Stairs *](https://github.com/abcdlsj/Leetcode/tree/master/n746.%20Min%20Cost%20Climbing%20Stairs)
+- [752. Open the Lock **](https://github.com/abcdlsj/Leetcode/tree/master/n752.%20Open%20the%20Lock)
 - [771. Jewels and Stones *](https://github.com/abcdlsj/Leetcode/tree/master/n771.%20Jewels%20and%20Stones)
 - [830. Positions of Large Groups *](https://github.com/abcdlsj/Leetcode/tree/master/n830.%20Positions%20of%20Large%20Groups)
 - [905. Sort Array By Parity *](https://github.com/abcdlsj/Leetcode/tree/master/n905.%20Sort%20Array%20By%20Parity)

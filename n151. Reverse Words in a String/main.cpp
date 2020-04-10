@@ -3,11 +3,24 @@
 class Solution {
 public:
     string reverseWords(string s) {
-        stringstream ss(s);
-        string tmp, ans = "";
-        while(ss >> tmp) {
-            ans.insert(0, tmp + " ");
+        reverse(s.begin(), s.end());
+        int cur = 0;
+
+        for(int left = 0; left < s.size(); left++) {
+            if(s[left] != ' ') {
+                if(cur != 0) {
+                    s[cur++] = ' ';
+                }
+            }
+            int right = left;
+            while(s[right] != ' ' && right < s.size()) {
+                s[cur++] = s[right++];
+            }
+
+            reverse(s.begin() + cur - (right - left), s.begin() + cur);
+            left = right;
         }
-        return ans.size() ? string(ans.begin(), ans.end() - 1) : ""; 
+        s.erase(s.begin() + cur, s.end());
+        return s;        
     }
 };

@@ -1,8 +1,8 @@
 # Reverse Words in a String **
 - 题目地址: [https://leetcode-cn.com/problems/reverse-words-in-a-string](https://leetcode-cn.com/problems/reverse-words-in-a-string)
-- 执行时间: 28 ms
-- 内存消耗: 8.8 MB
-- 通过日期: 2020-04-10 00:52
+- 执行时间: 8 ms
+- 内存消耗: 7.3 MB
+- 通过日期: 2020-04-10 08:54
 
 ## 题目内容
 <p>给定一个字符串，逐个翻转字符串中的每个单词。</p>
@@ -53,12 +53,25 @@
 class Solution {
 public:
     string reverseWords(string s) {
-        stringstream ss(s);
-        string tmp, ans = "";
-        while(ss >> tmp) {
-            ans.insert(0, tmp + " ");
+        reverse(s.begin(), s.end());
+        int cur = 0;
+
+        for(int left = 0; left < s.size(); left++) {
+            if(s[left] != ' ') {
+                if(cur != 0) {
+                    s[cur++] = ' ';
+                }
+            }
+            int right = left;
+            while(s[right] != ' ' && right < s.size()) {
+                s[cur++] = s[right++];
+            }
+
+            reverse(s.begin() + cur - (right - left), s.begin() + cur);
+            left = right;
         }
-        return ans.size() ? string(ans.begin(), ans.end() - 1) : ""; 
+        s.erase(s.begin() + cur, s.end());
+        return s;        
     }
 };
 
