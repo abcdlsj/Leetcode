@@ -3,21 +3,17 @@
 class Solution {
 public:
     vector<vector<int>> subsets(vector<int>& nums) {
-        int n = nums.size();
-        
         vector<vector<int>> res;
-        vector<int> cnt;
-
-        int m = 0;
-
-        while(m < (1 << n)){
-            for(int i = 0; i < n; ++i){
-                if((1 << i) & m) cnt.push_back(nums[i]);
-            }
-            res.push_back(cnt);
-            cnt.clear();
-            m ++;
-        }
+        vector<int> path;
+        backtrack(res, path, nums, 0);
         return res;
+    }
+    void backtrack(vector<vector<int>> &res, vector<int> &path, vector<int> nums, int start) {
+        res.push_back(path);
+        for(int i = start; i < nums.size(); i++) {
+            path.push_back(nums[i]);
+            backtrack(res, path, nums, i + 1);
+            path.pop_back();
+        }
     }
 };

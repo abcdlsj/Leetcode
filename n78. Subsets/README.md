@@ -1,8 +1,8 @@
 # Subsets **
 - 题目地址: [https://leetcode-cn.com/problems/subsets](https://leetcode-cn.com/problems/subsets)
 - 执行时间: 4 ms
-- 内存消耗: 9.4 MB
-- 通过日期: 2020-02-29 16:33
+- 内存消耗: 7.2 MB
+- 通过日期: 2020-04-03 20:29
 
 ## 题目内容
 <p>给定一组<strong>不含重复元素</strong>的整数数组 <em>nums</em>，返回该数组所有可能的子集（幂集）。</p>
@@ -32,22 +32,18 @@
 class Solution {
 public:
     vector<vector<int>> subsets(vector<int>& nums) {
-        int n = nums.size();
-        
         vector<vector<int>> res;
-        vector<int> cnt;
-
-        int m = 0;
-
-        while(m < (1 << n)){
-            for(int i = 0; i < n; ++i){
-                if((1 << i) & m) cnt.push_back(nums[i]);
-            }
-            res.push_back(cnt);
-            cnt.clear();
-            m ++;
-        }
+        vector<int> path;
+        backtrack(res, path, nums, 0);
         return res;
+    }
+    void backtrack(vector<vector<int>> &res, vector<int> &path, vector<int> nums, int start) {
+        res.push_back(path);
+        for(int i = start; i < nums.size(); i++) {
+            path.push_back(nums[i]);
+            backtrack(res, path, nums, i + 1);
+            path.pop_back();
+        }
     }
 };
 

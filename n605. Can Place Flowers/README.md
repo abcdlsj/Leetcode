@@ -1,8 +1,8 @@
 # Can Place Flowers *
 - 题目地址: [https://leetcode-cn.com/problems/can-place-flowers](https://leetcode-cn.com/problems/can-place-flowers)
-- 执行时间: 24 ms
-- 内存消耗: 10.3 MB
-- 通过日期: 2019-08-25 14:45
+- 执行时间: 20 ms
+- 内存消耗: 10.4 MB
+- 通过日期: 2019-08-25 14:40
 
 ## 题目内容
 <p>假设你有一个很长的花坛，一部分地块种植了花，另一部分却没有。可是，花卉不能种植在相邻的地块上，它们会争夺水源，两者都会死去。</p>
@@ -40,10 +40,11 @@ class Solution {
 public:
     bool canPlaceFlowers(vector<int>& flowerbed, int n) {
         if(flowerbed.empty()) return false;
-        int t=flowerbed.size();
-        for(int i=0;i<t;i++)
+        for(int i=0;i<flowerbed.size();i++)
         {
-            if(flowerbed[i]==0&&(i-1==-1||flowerbed[i-1]==0)&&(i+1==t||flowerbed[i+1]==0)) 
+            if(flowerbed[i]==0                              //当前位置为0
+              &&(i-1==-1||flowerbed[i-1]==0)                //前一位置为0，或索引为-1
+              &&(i+1==flowerbed.size()||flowerbed[i+1]==0)) //后一位置为0，或索引为flowerbed.size()
             {
                 n--;
                 flowerbed[i]=1;                

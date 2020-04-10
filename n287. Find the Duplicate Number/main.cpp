@@ -3,14 +3,17 @@
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
-        int n=nums.size(),res[n+10];
-        memset(res,0,sizeof(res));
-        for(int i=0;i<n;i++)
-        {
-            if(res[nums[i]]==1)
-                return nums[i];
-            res[nums[i]]=1;
+        int fast = 0, slow = 0;
+        while(true) {
+            fast = nums[nums[fast]];
+            slow = nums[slow];
+            if(fast == slow) break;
         }
-        return 0;
+        fast = 0;
+        while(fast != slow) {
+            fast = nums[fast];
+            slow = nums[slow];
+        }
+        return slow;
     }
 };
