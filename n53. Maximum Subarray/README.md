@@ -1,8 +1,8 @@
 # Maximum Subarray *
 - 题目地址: [https://leetcode-cn.com/problems/maximum-subarray](https://leetcode-cn.com/problems/maximum-subarray)
-- 执行时间: 8 ms
-- 内存消耗: 15.6 MB
-- 通过日期: 2020-03-03 10:49
+- 执行时间: 12 ms
+- 内存消耗: 14.5 MB
+- 通过日期: 2020-03-16 10:36
 
 ## 题目内容
 <p>给定一个整数数组 <code>nums</code> ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。</p>
@@ -26,16 +26,14 @@
 class Solution {
 public:
     int maxSubArray(vector<int>& nums) {
-        if(nums.empty()) return 0;
+        int n = nums.size(), MAX = nums[0];
         vector<int> cnt(nums);
-        int maxn = nums[0];
-        for(int i = 1; i < nums.size(); ++i) {
-            cnt[i] = max(cnt[i-1] + nums[i], nums[i]);
-
-            if(cnt[i] > maxn) maxn = cnt[i];
+        for(int i = 1; i < n; i++) {
+            cnt[i] = max(cnt[i - 1] + cnt[i], cnt[i]);
+            if(cnt[i] > MAX) MAX = cnt[i];
         }
-        return maxn;
-     }
+        return MAX;
+    }
 };
 
 ```

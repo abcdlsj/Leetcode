@@ -3,14 +3,12 @@
 class Solution {
 public:
     int maxSubArray(vector<int>& nums) {
-        if(nums.empty()) return 0;
+        int n = nums.size(), MAX = nums[0];
         vector<int> cnt(nums);
-        int maxn = nums[0];
-        for(int i = 1; i < nums.size(); ++i) {
-            cnt[i] = max(cnt[i-1] + nums[i], nums[i]);
-
-            if(cnt[i] > maxn) maxn = cnt[i];
+        for(int i = 1; i < n; i++) {
+            cnt[i] = max(cnt[i - 1] + cnt[i], cnt[i]);
+            if(cnt[i] > MAX) MAX = cnt[i];
         }
-        return maxn;
-     }
+        return MAX;
+    }
 };

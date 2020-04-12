@@ -5,9 +5,11 @@
 - 通过日期: 2019-09-10 23:50
 
 ## 题目内容
-<p>给定两个二进制字符串，返回他们的和（用二进制表示）。</p>
+<p>给你两个二进制字符串，返回它们的和（用二进制表示）。</p>
 
-<p>输入为<strong>非空</strong>字符串且只包含数字 <code>1</code> 和 <code>0</code>。</p>
+<p>输入为 <strong>非空 </strong>字符串且只包含数字 <code>1</code> 和 <code>0</code>。</p>
+
+
 
 <p><strong>示例 1:</strong></p>
 
@@ -18,6 +20,16 @@
 
 <pre><strong>输入:</strong> a = "1010", b = "1011"
 <strong>输出:</strong> "10101"</pre>
+
+
+
+<p><strong>提示：</strong></p>
+
+<ul>
+	<li>每个字符串仅由字符 <code>'0'</code> 或 <code>'1'</code> 组成。</li>
+	<li><code>1 <= a.length, b.length <= 10^4</code></li>
+	<li>字符串如果不是 <code>"0"</code> ，就都不含前导零。</li>
+</ul>
 
 
 ## 解法
