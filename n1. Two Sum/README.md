@@ -1,8 +1,8 @@
 # Two Sum *
 - 题目地址: [https://leetcode-cn.com/problems/two-sum](https://leetcode-cn.com/problems/two-sum)
-- 执行时间: 532 ms
-- 内存消耗: 9.1 MB
-- 通过日期: 2019-09-14 13:16
+- 执行时间: 12 ms
+- 内存消耗: 8.2 MB
+- 通过日期: 2020-03-24 21:24
 
 ## 题目内容
 <p>给定一个整数数组 <code>nums</code> 和一个目标值 <code>target</code>，请你在该数组中找出和为目标值的那 <strong>两个</strong> 整数，并返回他们的数组下标。</p>
@@ -25,16 +25,13 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        vector<int> ans;
-        for(int i=0;i<nums.size();i++){
-            for(int j=i+1;j<nums.size();j++){
-                if(nums[i]+nums[j]==target){
-                    ans.push_back(i);
-                    ans.push_back(j);
-                }
-            }
+        unordered_map<int, int> map;
+        for(int i = 0; i < nums.size(); i++) {
+            if(map.find(target - nums[i]) != map.end())
+                return {map[target - nums[i]], i};
+            else map[nums[i]] = i;
         }
-        return ans;
+        return {};
     }
 };
 

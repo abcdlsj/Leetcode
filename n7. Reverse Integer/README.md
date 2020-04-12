@@ -1,8 +1,8 @@
 # Reverse Integer *
 - 题目地址: [https://leetcode-cn.com/problems/reverse-integer](https://leetcode-cn.com/problems/reverse-integer)
-- 执行时间: 8 ms
-- 内存消耗: 8.2 MB
-- 通过日期: 2020-03-08 14:04
+- 执行时间: 4 ms
+- 内存消耗: 7.5 MB
+- 通过日期: 2020-03-20 12:22
 
 ## 题目内容
 <p>给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。</p>
@@ -36,20 +36,17 @@
 
 class Solution {
 public:
-  int reverse(int x) {
-    int res = 0; // res表示结果
-
-    while (x != 0) {
-      if (res > INT_MAX / 10)
-        return 0; //注意：看ps
-      if (res < INT_MIN / 10)
-        return 0; //判断是否将要发生越界
-      res *= 10;
-      res = res + x % 10;
-      x = x / 10;
+    int reverse(int x) {
+        int rev = 0;
+        while(x) {
+            int pop = x%10;
+            x /= 10;
+            if(rev > INT_MAX/10 || (rev == INT_MAX/10 && pop > 7)) return 0;
+            if(rev < INT_MIN/10 || (rev == INT_MIN/10 && pop < -8)) return 0;
+            rev = rev*10 + pop;
+        }
+        return rev;
     }
-    return res;
-  }
 };
 
 ```

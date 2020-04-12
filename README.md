@@ -1,11 +1,24 @@
 
 ## Leetcode
-目前已解决的题目（132 个，其中简单74 个，中等54 个， 困难4 个）：
+目前已解决的题目（145 个，其中简单80 个，中等61 个， 困难4 个）：
 - [1. Two Sum *](https://github.com/abcdlsj/Leetcode/tree/master/n1.%20Two%20Sum)
 - [2. Add Two Numbers **](https://github.com/abcdlsj/Leetcode/tree/master/n2.%20Add%20Two%20Numbers)
 - [3. Longest Substring Without Repeating Characters **](https://github.com/abcdlsj/Leetcode/tree/master/n3.%20Longest%20Substring%20Without%20Repeating%20Characters)
+- [5. Longest Palindromic Substring **](https://github.com/abcdlsj/Leetcode/tree/master/n5.%20Longest%20Palindromic%20Substring)
 - [7. Reverse Integer *](https://github.com/abcdlsj/Leetcode/tree/master/n7.%20Reverse%20Integer)
+- [8. String to Integer (atoi) **](https://github.com/abcdlsj/Leetcode/tree/master/n8.%20String%20to%20Integer%20(atoi))
+- [9. Palindrome Number *](https://github.com/abcdlsj/Leetcode/tree/master/n9.%20Palindrome%20Number)
 - [11. Container With Most Water **](https://github.com/abcdlsj/Leetcode/tree/master/n11.%20Container%20With%20Most%20Water)
+- [14. Longest Common Prefix *](https://github.com/abcdlsj/Leetcode/tree/master/n14.%20Longest%20Common%20Prefix)
+- [15. 3Sum **](https://github.com/abcdlsj/Leetcode/tree/master/n15.%203Sum)
+- [16. 3Sum Closest **](https://github.com/abcdlsj/Leetcode/tree/master/n16.%203Sum%20Closest)
+- [17. Letter Combinations of a Phone Number **](https://github.com/abcdlsj/Leetcode/tree/master/n17.%20Letter%20Combinations%20of%20a%20Phone%20Number)
+- [19. Remove Nth Node From End of List **](https://github.com/abcdlsj/Leetcode/tree/master/n19.%20Remove%20Nth%20Node%20From%20End%20of%20List)
+- [20. Valid Parentheses *](https://github.com/abcdlsj/Leetcode/tree/master/n20.%20Valid%20Parentheses)
+- [21. Merge Two Sorted Lists *](https://github.com/abcdlsj/Leetcode/tree/master/n21.%20Merge%20Two%20Sorted%20Lists)
+- [22. Generate Parentheses **](https://github.com/abcdlsj/Leetcode/tree/master/n22.%20Generate%20Parentheses)
+- [26. Remove Duplicates from Sorted Array *](https://github.com/abcdlsj/Leetcode/tree/master/n26.%20Remove%20Duplicates%20from%20Sorted%20Array)
+- [28. Implement strStr() *](https://github.com/abcdlsj/Leetcode/tree/master/n28.%20Implement%20strStr())
 - [35. Search Insert Position *](https://github.com/abcdlsj/Leetcode/tree/master/n35.%20Search%20Insert%20Position)
 - [53. Maximum Subarray *](https://github.com/abcdlsj/Leetcode/tree/master/n53.%20Maximum%20Subarray)
 - [67. Add Binary *](https://github.com/abcdlsj/Leetcode/tree/master/n67.%20Add%20Binary)
