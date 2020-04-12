@@ -256,7 +256,7 @@ if __name__ == "__main__":
         "git",
         "commit",
         "-m",
-        "commit by leetcode_.py @abcdlsj at {}".format(
+        "commit by leetcode.py @abcdlsj at {}".format(
             datetime.now().strftime("%Y-%m-%d %H:%M")),
     ])
     subprocess.run(["git", "push", "-f", "origin", "master"])
