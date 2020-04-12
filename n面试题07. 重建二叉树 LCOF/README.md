@@ -1,8 +1,8 @@
 # 重建二叉树 LCOF **
 - 题目地址: [https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof)
-- 执行时间: 32 ms
-- 内存消耗: 23.3 MB
-- 通过日期: 2020-03-05 22:06
+- 执行时间: 72 ms
+- 内存消耗: 25.2 MB
+- 通过日期: 2020-04-12 16:45
 
 ## 题目内容
 <p>输入某二叉树的前序遍历和中序遍历的结果，请重建该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。</p>
@@ -48,17 +48,17 @@
  */
 class Solution {
 public:
+    TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
+        return build(preorder, inorder, 0, 0, preorder.size() - 1);
+    }
     TreeNode* build(vector<int>& preorder, vector<int>& inorder, int root, int begin, int end) {
         if(begin > end) return NULL;
         TreeNode* tree = new TreeNode(preorder[root]);
         int i = begin;
         while(i < end && preorder[root] != inorder[i]) i++;
-        tree -> left = build(preorder, inorder, root + 1, begin, i - 1);
-        tree -> right = build(preorder, inorder, root + 1 + i - begin, i + 1, end);
+        tree->left = build(preorder, inorder, root + 1, begin, i - 1);
+        tree->right = build(preorder, inorder, root + i - begin + 1, i + 1, end);
         return tree;
-    }
-    TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
-        return build(preorder, inorder, 0, 0, inorder.size() - 1);
     }
 };
 

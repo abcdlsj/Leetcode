@@ -1,6 +1,6 @@
 
 ## Leetcode
-目前已解决的题目（125 个，其中简单71 个，中等51 个， 困难3 个）：
+目前已解决的题目（132 个，其中简单74 个，中等54 个， 困难4 个）：
 - [1. Two Sum *](https://github.com/abcdlsj/Leetcode/tree/master/n1.%20Two%20Sum)
 - [2. Add Two Numbers **](https://github.com/abcdlsj/Leetcode/tree/master/n2.%20Add%20Two%20Numbers)
 - [3. Longest Substring Without Repeating Characters **](https://github.com/abcdlsj/Leetcode/tree/master/n3.%20Longest%20Substring%20Without%20Repeating%20Characters)
@@ -77,15 +77,22 @@
 - [746. Min Cost Climbing Stairs *](https://github.com/abcdlsj/Leetcode/tree/master/n746.%20Min%20Cost%20Climbing%20Stairs)
 - [752. Open the Lock **](https://github.com/abcdlsj/Leetcode/tree/master/n752.%20Open%20the%20Lock)
 - [771. Jewels and Stones *](https://github.com/abcdlsj/Leetcode/tree/master/n771.%20Jewels%20and%20Stones)
+- [796. Rotate String *](https://github.com/abcdlsj/Leetcode/tree/master/n796.%20Rotate%20String)
 - [830. Positions of Large Groups *](https://github.com/abcdlsj/Leetcode/tree/master/n830.%20Positions%20of%20Large%20Groups)
+- [836. Rectangle Overlap *](https://github.com/abcdlsj/Leetcode/tree/master/n836.%20Rectangle%20Overlap)
+- [876. Middle of the Linked List *](https://github.com/abcdlsj/Leetcode/tree/master/n876.%20Middle%20of%20the%20Linked%20List)
+- [887. Super Egg Drop ***](https://github.com/abcdlsj/Leetcode/tree/master/n887.%20Super%20Egg%20Drop)
+- [892. Surface Area of 3D Shapes *](https://github.com/abcdlsj/Leetcode/tree/master/n892.%20Surface%20Area%20of%203D%20Shapes)
 - [905. Sort Array By Parity *](https://github.com/abcdlsj/Leetcode/tree/master/n905.%20Sort%20Array%20By%20Parity)
 - [912. Sort an Array **](https://github.com/abcdlsj/Leetcode/tree/master/n912.%20Sort%20an%20Array)
 - [925. Long Pressed Name *](https://github.com/abcdlsj/Leetcode/tree/master/n925.%20Long%20Pressed%20Name)
+- [945. Minimum Increment to Make Array Unique **](https://github.com/abcdlsj/Leetcode/tree/master/n945.%20Minimum%20Increment%20to%20Make%20Array%20Unique)
 - [949. Largest Time for Given Digits *](https://github.com/abcdlsj/Leetcode/tree/master/n949.%20Largest%20Time%20for%20Given%20Digits)
 - [970. Powerful Integers *](https://github.com/abcdlsj/Leetcode/tree/master/n970.%20Powerful%20Integers)
-- [994. Rotting Oranges *](https://github.com/abcdlsj/Leetcode/tree/master/n994.%20Rotting%20Oranges)
+- [994. Rotting Oranges **](https://github.com/abcdlsj/Leetcode/tree/master/n994.%20Rotting%20Oranges)
 - [1037. Valid Boomerang *](https://github.com/abcdlsj/Leetcode/tree/master/n1037.%20Valid%20Boomerang)
 - [1108. Defanging an IP Address *](https://github.com/abcdlsj/Leetcode/tree/master/n1108.%20Defanging%20an%20IP%20Address)
+- [1162. As Far from Land as Possible **](https://github.com/abcdlsj/Leetcode/tree/master/n1162.%20As%20Far%20from%20Land%20as%20Possible)
 - [1170. Compare Strings by Frequency of the Smallest Character *](https://github.com/abcdlsj/Leetcode/tree/master/n1170.%20Compare%20Strings%20by%20Frequency%20of%20the%20Smallest%20Character)
 - [1175. Prime Arrangements *](https://github.com/abcdlsj/Leetcode/tree/master/n1175.%20Prime%20Arrangements)
 - [1177. Can Make Palindrome from Substring **](https://github.com/abcdlsj/Leetcode/tree/master/n1177.%20Can%20Make%20Palindrome%20from%20Substring)

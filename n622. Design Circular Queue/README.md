@@ -25,7 +25,7 @@
 
 <p><strong>示例：</strong></p>
 
-<pre>MyCircularQueue circularQueue = new MycircularQueue(3); // 设置长度为 3
+<pre>MyCircularQueue circularQueue = new MyCircularQueue(3); // 设置长度为 3
 
 circularQueue.enQueue(1);  // 返回 true
 

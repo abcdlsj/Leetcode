@@ -1,8 +1,8 @@
 # Open the Lock **
 - 题目地址: [https://leetcode-cn.com/problems/open-the-lock](https://leetcode-cn.com/problems/open-the-lock)
-- 执行时间: 212 ms
+- 执行时间: 176 ms
 - 内存消耗: 34.7 MB
-- 通过日期: 2020-03-19 10:56
+- 通过日期: 2020-03-19 11:00
 
 ## 题目内容
 <p>你有一个带有四个圆形拨轮的转盘锁。每个拨轮都有10个数字： <code>'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'</code> 。每个拨轮可以自由旋转：例如把 <code>'9'</code> 变为  <code>'0'</code><font color="#333333" face="Helvetica Neue, Helvetica, Arial, sans-serif"><span style="background-color:#ffffff; font-size:14px">，</span></font><code>'0'</code> 变为 <code>'9'</code> 。每次旋转都只能旋转一个拨轮的一位数字。</p>
@@ -68,12 +68,10 @@
 
 class Solution {
 public:
-    vector<char> nums{'0','1','2','3','4','5','6','7','8','9'};
     int openLock(vector<string>& deadends, string target) {
         queue<string> path;
         unordered_set<string> vis, deads(deadends.begin(), deadends.end());
-        vis.insert("0000");
-        path.push("0000");
+        vis.insert("0000"); path.push("0000");
         if(deads.count(path.front())) return -1;
         int cnt = 0; vector<int> dir = {-1,1};
         while(!path.empty()) {

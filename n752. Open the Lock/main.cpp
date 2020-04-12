@@ -2,12 +2,10 @@
 
 class Solution {
 public:
-    vector<char> nums{'0','1','2','3','4','5','6','7','8','9'};
     int openLock(vector<string>& deadends, string target) {
         queue<string> path;
         unordered_set<string> vis, deads(deadends.begin(), deadends.end());
-        vis.insert("0000");
-        path.push("0000");
+        vis.insert("0000"); path.push("0000");
         if(deads.count(path.front())) return -1;
         int cnt = 0; vector<int> dir = {-1,1};
         while(!path.empty()) {

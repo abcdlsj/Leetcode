@@ -1,8 +1,8 @@
 # Sort Array By Parity *
 - 题目地址: [https://leetcode-cn.com/problems/sort-array-by-parity](https://leetcode-cn.com/problems/sort-array-by-parity)
-- 执行时间: 16 ms
-- 内存消耗: 18.5 MB
-- 通过日期: 2020-02-28 13:53
+- 执行时间: 20 ms
+- 内存消耗: 16 MB
+- 通过日期: 2020-04-03 15:47
 
 ## 题目内容
 <p>给定一个非负整数数组 <code>A</code>，返回一个数组，在该数组中， <code>A</code> 的所有偶数元素之后跟着所有奇数元素。</p>
@@ -41,10 +41,10 @@ public:
         int n = A.size();
         int i = 0, j = n - 1;
         while(i <= j) {
-            if(A[i]%2==1&&A[j]%2==0)
+            if(A[i] % 2 == 1 && A[j] % 2 == 0)
                 swap(A[i],A[j]);
-            if(A[i]%2==0) ++i;
-            if(A[j]%2==1) --j;
+            if(A[i]%2 == 0) ++i;
+            if(A[j]%2 == 1) --j;
         }
         return A;
     }

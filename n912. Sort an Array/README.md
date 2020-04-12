@@ -1,11 +1,11 @@
 # Sort an Array **
 - 题目地址: [https://leetcode-cn.com/problems/sort-an-array](https://leetcode-cn.com/problems/sort-an-array)
-- 执行时间: 208 ms
-- 内存消耗: 96.4 MB
-- 通过日期: 2020-03-04 10:10
+- 执行时间: 276 ms
+- 内存消耗: 121.4 MB
+- 通过日期: 2020-03-31 23:03
 
 ## 题目内容
-<p>给定一个整数数组 <code>nums</code>，将该数组升序排列。</p>
+<p>给你一个整数数组 <code>nums</code>，请你将该数组升序排列。</p>
 
 
 
@@ -14,15 +14,13 @@
 
 <p><strong>示例 1：</strong></p>
 
-<pre>
-<strong>输入：</strong>[5,2,3,1]
+<pre><strong>输入：</strong>nums = [5,2,3,1]
 <strong>输出：</strong>[1,2,3,5]
 </pre>
 
 <p><strong>示例 2：</strong></p>
 
-<pre>
-<strong>输入：</strong>[5,1,1,2,0,0]
+<pre><strong>输入：</strong>nums = [5,1,1,2,0,0]
 <strong>输出：</strong>[0,0,1,1,2,5]
 </pre>
 
@@ -31,8 +29,8 @@
 <p><strong>提示：</strong></p>
 
 <ol>
-	<li><code>1 <= A.length <= 10000</code></li>
-	<li><code>-50000 <= A[i] <= 50000</code></li>
+	<li><code>1 <= nums.length <= 50000</code></li>
+	<li><code>-50000 <= nums[i] <= 50000</code></li>
 </ol>
 
 
@@ -42,6 +40,7 @@
 
 class Solution {
 public:
+    //冒泡排序
     void bubble_sort(vector<int> &nums) {
         int n = nums.size();
         for(int i = 0; i < n; i++) {
@@ -51,6 +50,7 @@ public:
             }
         }
     }
+    //快排
     void quick_sort(vector<int> &nums, int begin, int end) {
         while (begin >= end) return;
         int cpr = nums[end];
@@ -66,6 +66,7 @@ public:
         quick_sort(nums, begin, left - 1);
         quick_sort(nums, left + 1, end);
     }
+    //插入
     void insertion_sort(vector<int> &nums) {
         int n = nums.size();
         for(int i = 0; i < n; i++) {
@@ -78,6 +79,22 @@ public:
             nums[j+1] = tmp;
         }
     }
+    // 希尔排序
+    void ShellSort(vector<int> &nums,int n) {    
+    }
+
+    //选择
+    void selection_sort(vector<int> &nums) {
+        int n = nums.size();
+        int min;
+        for(int i = 0; i < n - 1; i++) {
+            min = i;
+            for(int j = i + 1; j < n; j++) {
+                if(nums[j] < nums[min]) min = j;
+            }
+            swap(nums[i], nums[min]);
+        }
+     }
     //归并
     void merge(vector<int> &Array, int front, int mid, int end) {
         vector<int> LeftSubArray(Array.begin() + front, Array.begin() + mid + 1);
@@ -105,7 +122,6 @@ public:
         MergeSort(Array, mid + 1, end);
         merge(Array, front, mid, end); 
     }
-
 
     vector<int> sortArray(vector<int>& nums) {
         // quick_sort(nums, 0, nums.size() - 1);

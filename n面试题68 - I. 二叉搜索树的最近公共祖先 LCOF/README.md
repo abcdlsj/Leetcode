@@ -1,8 +1,8 @@
 # 二叉搜索树的最近公共祖先 LCOF *
 - 题目地址: [https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof)
-- 执行时间: 56 ms
-- 内存消耗: 25.1 MB
-- 通过日期: 2020-03-16 17:21
+- 执行时间: 36 ms
+- 内存消耗: 23.4 MB
+- 通过日期: 2020-04-12 10:29
 
 ## 题目内容
 <p>给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。</p>
@@ -56,10 +56,11 @@
 class Solution {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        if(p->val > root->val && q->val > root->val) 
-            return lowestCommonAncestor(root->right, p, q);
-        else if(p->val < root->val && q->val < root->val) 
-            return lowestCommonAncestor(root->left, p, q);
+        if(p->val < root->val && q->val < root->val) {
+            root = lowestCommonAncestor(root->left, p, q);
+        } else if(p->val > root->val && q->val > root->val) {
+            root = lowestCommonAncestor(root->right, p, q);
+        }
         return root;
     }
 };

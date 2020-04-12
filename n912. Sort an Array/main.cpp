@@ -2,6 +2,7 @@
 
 class Solution {
 public:
+    //冒泡排序
     void bubble_sort(vector<int> &nums) {
         int n = nums.size();
         for(int i = 0; i < n; i++) {
@@ -11,6 +12,7 @@ public:
             }
         }
     }
+    //快排
     void quick_sort(vector<int> &nums, int begin, int end) {
         while (begin >= end) return;
         int cpr = nums[end];
@@ -26,6 +28,7 @@ public:
         quick_sort(nums, begin, left - 1);
         quick_sort(nums, left + 1, end);
     }
+    //插入
     void insertion_sort(vector<int> &nums) {
         int n = nums.size();
         for(int i = 0; i < n; i++) {
@@ -38,6 +41,22 @@ public:
             nums[j+1] = tmp;
         }
     }
+    // 希尔排序
+    void ShellSort(vector<int> &nums,int n) {    
+    }
+
+    //选择
+    void selection_sort(vector<int> &nums) {
+        int n = nums.size();
+        int min;
+        for(int i = 0; i < n - 1; i++) {
+            min = i;
+            for(int j = i + 1; j < n; j++) {
+                if(nums[j] < nums[min]) min = j;
+            }
+            swap(nums[i], nums[min]);
+        }
+     }
     //归并
     void merge(vector<int> &Array, int front, int mid, int end) {
         vector<int> LeftSubArray(Array.begin() + front, Array.begin() + mid + 1);
@@ -65,7 +84,6 @@ public:
         MergeSort(Array, mid + 1, end);
         merge(Array, front, mid, end); 
     }
-
 
     vector<int> sortArray(vector<int>& nums) {
         // quick_sort(nums, 0, nums.size() - 1);
