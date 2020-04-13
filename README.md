@@ -1,6 +1,6 @@
 
 ## Leetcode
-目前已解决的题目（155 个，其中简单80 个，中等70 个， 困难5 个）：
+目前已解决的题目（156 个，其中简单81 个，中等70 个， 困难5 个）：
 - [1. Two Sum *](https://github.com/abcdlsj/Leetcode/tree/master/n1.%20Two%20Sum)
 - [2. Add Two Numbers **](https://github.com/abcdlsj/Leetcode/tree/master/n2.%20Add%20Two%20Numbers)
 - [3. Longest Substring Without Repeating Characters **](https://github.com/abcdlsj/Leetcode/tree/master/n3.%20Longest%20Substring%20Without%20Repeating%20Characters)
@@ -148,6 +148,7 @@
 - [1402. Reducing Dishes ***](https://github.com/abcdlsj/Leetcode/tree/master/n1402.%20Reducing%20Dishes)
 - [1403. Minimum Subsequence in Non-Increasing Order *](https://github.com/abcdlsj/Leetcode/tree/master/n1403.%20Minimum%20Subsequence%20in%20Non-Increasing%20Order)
 - [1404. Number of Steps to Reduce a Number in Binary Representation to One **](https://github.com/abcdlsj/Leetcode/tree/master/n1404.%20Number%20of%20Steps%20to%20Reduce%20a%20Number%20in%20Binary%20Representation%20to%20One)
+- [1408. String Matching in an Array *](https://github.com/abcdlsj/Leetcode/tree/master/n1408.%20String%20Matching%20in%20an%20Array)
 - [5311. Number of Steps to Reduce a Number to Zero *](https://github.com/abcdlsj/Leetcode/tree/master/n5311.%20Number%20of%20Steps%20to%20Reduce%20a%20Number%20to%20Zero)
 - [5312. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold **](https://github.com/abcdlsj/Leetcode/tree/master/n5312.%20Number%20of%20Sub-arrays%20of%20Size%20K%20and%20Average%20Greater%20than%20or%20Equal%20to%20Threshold)
 - [5313. Angle Between Hands of a Clock **](https://github.com/abcdlsj/Leetcode/tree/master/n5313.%20Angle%20Between%20Hands%20of%20a%20Clock)

@@ -1,8 +1,8 @@
 # Find Peak Element **
 - 题目地址: [https://leetcode-cn.com/problems/find-peak-element](https://leetcode-cn.com/problems/find-peak-element)
-- 执行时间: 4 ms
-- 内存消耗: 11.8 MB
-- 通过日期: 2020-03-11 15:27
+- 执行时间: 8 ms
+- 内存消耗: 10.5 MB
+- 通过日期: 2020-03-11 15:40
 
 ## 题目内容
 <p>峰值元素是指其值大于左右相邻值的元素。</p>
@@ -38,16 +38,29 @@
 
 class Solution {
 public:
-    int binarysearch(vector<int> nums, int left, int right) {
-        if(left >= right) return left;
-        int mid = left + (right - left) / 2;
-        if(nums[mid] > nums[mid + 1])
-            return binarysearch(nums, left, mid);
-        else
-            return binarysearch(nums, mid + 1, right);
-    }
+    // int binarysearch(vector<int> nums, int left, int right) {
+    //     if(left >= right) return left;
+    //     int mid = left + (right - left) / 2;
+    //     if(nums[mid] > nums[mid + 1])
+    //         return binarysearch(nums, left, mid);
+    //     else
+    //         return binarysearch(nums, mid + 1, right);
+    // }
     int findPeakElement(vector<int>& nums) {
-        return binarysearch(nums, 0, nums.size() - 1);
+        // 递归
+        // return binarysearch(nums, 0, nums.size() - 1);
+        
+        // 迭代
+        int left = 0, right = nums.size() - 1;
+        int mid = 0;
+        while(left < right) {
+            mid = left + (right - left) / 2;
+            if(nums[mid] > nums[mid + 1])
+                right = mid;
+            else
+                left = mid + 1;
+        }
+        return left;
     }
 };
 
