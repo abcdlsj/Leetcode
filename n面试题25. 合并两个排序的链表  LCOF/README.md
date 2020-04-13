@@ -1,17 +1,22 @@
-# Merge Two Sorted Lists *
-- 题目地址: [https://leetcode-cn.com/problems/merge-two-sorted-lists](https://leetcode-cn.com/problems/merge-two-sorted-lists)
-- 执行时间: 16 ms
-- 内存消耗: 7 MB
-- 通过日期: 2020-04-12 20:16
+# 合并两个排序的链表  LCOF *
+- 题目地址: [https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof](https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof)
+- 执行时间: 44 ms
+- 内存消耗: 19.7 MB
+- 通过日期: 2020-04-13 10:49
 
 ## 题目内容
-<p>将两个升序链表合并为一个新的升序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。 </p>
+<p>输入两个递增排序的链表，合并这两个链表并使新链表中的节点仍然是递增排序的。</p>
 
-<p><strong>示例：</strong></p>
+<p><strong>示例1：</strong></p>
 
 <pre><strong>输入：</strong>1->2->4, 1->3->4
-<strong>输出：</strong>1->1->2->3->4->4
-</pre>
+<strong>输出：</strong>1->1->2->3->4->4</pre>
+
+<p><strong>限制：</strong></p>
+
+<p><code>0 <= 链表长度 <= 1000</code></p>
+
+<p>注意：本题与主站 21 题相同：<a href="https://leetcode-cn.com/problems/merge-two-sorted-lists/">https://leetcode-cn.com/problems/merge-two-sorted-lists/</a></p>
 
 
 ## 解法

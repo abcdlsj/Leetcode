@@ -1,6 +1,6 @@
 
 ## Leetcode
-目前已解决的题目（146 个，其中简单80 个，中等62 个， 困难4 个）：
+目前已解决的题目（155 个，其中简单80 个，中等70 个， 困难5 个）：
 - [1. Two Sum *](https://github.com/abcdlsj/Leetcode/tree/master/n1.%20Two%20Sum)
 - [2. Add Two Numbers **](https://github.com/abcdlsj/Leetcode/tree/master/n2.%20Add%20Two%20Numbers)
 - [3. Longest Substring Without Repeating Characters **](https://github.com/abcdlsj/Leetcode/tree/master/n3.%20Longest%20Substring%20Without%20Repeating%20Characters)
@@ -19,8 +19,16 @@
 - [22. Generate Parentheses **](https://github.com/abcdlsj/Leetcode/tree/master/n22.%20Generate%20Parentheses)
 - [26. Remove Duplicates from Sorted Array *](https://github.com/abcdlsj/Leetcode/tree/master/n26.%20Remove%20Duplicates%20from%20Sorted%20Array)
 - [28. Implement strStr() *](https://github.com/abcdlsj/Leetcode/tree/master/n28.%20Implement%20strStr())
+- [31. Next Permutation **](https://github.com/abcdlsj/Leetcode/tree/master/n31.%20Next%20Permutation)
+- [33. Search in Rotated Sorted Array **](https://github.com/abcdlsj/Leetcode/tree/master/n33.%20Search%20in%20Rotated%20Sorted%20Array)
 - [35. Search Insert Position *](https://github.com/abcdlsj/Leetcode/tree/master/n35.%20Search%20Insert%20Position)
+- [39. Combination Sum **](https://github.com/abcdlsj/Leetcode/tree/master/n39.%20Combination%20Sum)
+- [42. Trapping Rain Water ***](https://github.com/abcdlsj/Leetcode/tree/master/n42.%20Trapping%20Rain%20Water)
+- [46. Permutations **](https://github.com/abcdlsj/Leetcode/tree/master/n46.%20Permutations)
+- [47. Permutations II **](https://github.com/abcdlsj/Leetcode/tree/master/n47.%20Permutations%20II)
 - [53. Maximum Subarray *](https://github.com/abcdlsj/Leetcode/tree/master/n53.%20Maximum%20Subarray)
+- [56. Merge Intervals **](https://github.com/abcdlsj/Leetcode/tree/master/n56.%20Merge%20Intervals)
+- [62. Unique Paths **](https://github.com/abcdlsj/Leetcode/tree/master/n62.%20Unique%20Paths)
 - [67. Add Binary *](https://github.com/abcdlsj/Leetcode/tree/master/n67.%20Add%20Binary)
 - [69. Sqrt(x) *](https://github.com/abcdlsj/Leetcode/tree/master/n69.%20Sqrt(x))
 - [70. Climbing Stairs *](https://github.com/abcdlsj/Leetcode/tree/master/n70.%20Climbing%20Stairs)
@@ -28,6 +36,7 @@
 - [75. Sort Colors **](https://github.com/abcdlsj/Leetcode/tree/master/n75.%20Sort%20Colors)
 - [77. Combinations **](https://github.com/abcdlsj/Leetcode/tree/master/n77.%20Combinations)
 - [78. Subsets **](https://github.com/abcdlsj/Leetcode/tree/master/n78.%20Subsets)
+- [79. Word Search **](https://github.com/abcdlsj/Leetcode/tree/master/n79.%20Word%20Search)
 - [88. Merge Sorted Array *](https://github.com/abcdlsj/Leetcode/tree/master/n88.%20Merge%20Sorted%20Array)
 - [90. Subsets II **](https://github.com/abcdlsj/Leetcode/tree/master/n90.%20Subsets%20II)
 - [93. Restore IP Addresses **](https://github.com/abcdlsj/Leetcode/tree/master/n93.%20Restore%20IP%20Addresses)

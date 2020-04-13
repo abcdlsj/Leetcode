@@ -1,8 +1,8 @@
 # Binary Tree Preorder Traversal **
 - 题目地址: [https://leetcode-cn.com/problems/binary-tree-preorder-traversal](https://leetcode-cn.com/problems/binary-tree-preorder-traversal)
-- 执行时间: 4 ms
-- 内存消耗: 8.7 MB
-- 通过日期: 2020-04-12 09:37
+- 执行时间: 0 ms
+- 内存消耗: 9.9 MB
+- 通过日期: 2020-03-17 14:55
 
 ## 题目内容
 <p>给定一个二叉树，返回它的 <em>前序 </em>遍历。</p>
@@ -37,21 +37,19 @@
  */
 class Solution {
 public:
-    vector<int> res;
     vector<int> preorderTraversal(TreeNode* root) {
-        stack<TreeNode*> stack;
-        if(root) {
-            stack.push(root);
-        } else {
-            return res;
+        vector<int> ans;
+        stack<TreeNode*> sta;
+        if(!root) return ans;
+        sta.push(root);
+        while(!sta.empty()) {
+            TreeNode* cur = sta.top();
+            sta.pop();
+            ans.push_back(cur->val);
+            if(cur->right) sta.push(cur->right);
+            if(cur->left) sta.push(cur->left);
         }
-        while(!stack.empty()) {
-            TreeNode* cur = stack.top(); stack.pop();
-            res.push_back(cur->val);
-            if(cur->right) stack.push(cur->right);
-            if(cur->left) stack.push(cur->left);
-        }
-        return res;
+        return ans;
     }
 };
 

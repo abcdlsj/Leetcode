@@ -1,8 +1,8 @@
 # Binary Tree Postorder Traversal ***
 - 题目地址: [https://leetcode-cn.com/problems/binary-tree-postorder-traversal](https://leetcode-cn.com/problems/binary-tree-postorder-traversal)
 - 执行时间: 4 ms
-- 内存消耗: 8.7 MB
-- 通过日期: 2020-04-12 10:06
+- 内存消耗: 10.3 MB
+- 通过日期: 2020-03-17 14:54
 
 ## 题目内容
 <p>给定一个二叉树，返回它的 <em>后序 </em>遍历。</p>
@@ -36,25 +36,22 @@
  */
 class Solution {
 public:
-    vector<int> res;
     vector<int> postorderTraversal(TreeNode* root) {
-        stack<TreeNode*> stack1, stack2;
-        if(root) {
-            stack1.push(root);
-        } else {
-            return res;
+        vector<int> ans;
+        if(!root) return ans;
+        stack<TreeNode*> sta1, sta2;
+        sta1.push(root);
+        while(!sta1.empty()) {
+            TreeNode* cur = sta1.top();
+            sta1.pop();sta2.push(cur);
+            if(cur->left) sta1.push(cur->left);
+            if(cur->right) sta1.push(cur->right);
+         }
+        while(!sta2.empty()) {
+            ans.push_back(sta2.top() -> val);
+            sta2.pop();
         }
-        while(!stack1.empty()) {
-            TreeNode* cur = stack1.top(); stack1.pop();
-            stack2.push(cur);
-            if(cur->left) stack1.push(cur->left);
-            if(cur->right) stack1.push(cur->right);
-        }
-        while(!stack2.empty()) {
-            res.push_back(stack2.top()->val);
-            stack2.pop();
-        }
-        return res;
+        return ans;
     }
 };
 

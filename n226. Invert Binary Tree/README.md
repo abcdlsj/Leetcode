@@ -1,8 +1,8 @@
 # Invert Binary Tree *
 - 题目地址: [https://leetcode-cn.com/problems/invert-binary-tree](https://leetcode-cn.com/problems/invert-binary-tree)
-- 执行时间: 0 ms
-- 内存消耗: 9.1 MB
-- 通过日期: 2019-09-21 17:21
+- 执行时间: 4 ms
+- 内存消耗: 9.5 MB
+- 通过日期: 2020-04-13 10:59
 
 ## 题目内容
 <p>翻转一棵二叉树。</p>
@@ -47,12 +47,10 @@
 class Solution {
 public:
     TreeNode* invertTree(TreeNode* root) {
-        if(root==nullptr) return nullptr;
-        TreeNode *node = root->left;
-        root->left = root->right;
-        root->right = node;
-        invertTree(root->left);
-        invertTree(root->right);
+        if(root == nullptr) return nullptr;
+        TreeNode *tmp = root->left;
+        root->left = invertTree(root->right);
+        root->right = invertTree(tmp);
         return root;
     }
 };

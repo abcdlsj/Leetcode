@@ -11,11 +11,11 @@
  */
 class Solution {
 public:
-    TreeNode* invertTree(TreeNode* root) {
+    TreeNode* mirrorTree(TreeNode* root) {
         if(root == nullptr) return nullptr;
         TreeNode *tmp = root->left;
-        root->left = invertTree(root->right);
-        root->right = invertTree(tmp);
+        root->left = mirrorTree(root->right);
+        root->right = mirrorTree(tmp);
         return root;
     }
 };
