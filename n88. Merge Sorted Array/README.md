@@ -1,7 +1,7 @@
 # Merge Sorted Array *
 - 题目地址: [https://leetcode-cn.com/problems/merge-sorted-array](https://leetcode-cn.com/problems/merge-sorted-array)
-- 执行时间: 16 ms
-- 内存消耗: 8.6 MB
+- 执行时间: 8 ms
+- 内存消耗: 8.8 MB
 - 通过日期: 2019-08-27 10:47
 
 ## 题目内容

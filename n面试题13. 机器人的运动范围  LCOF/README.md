@@ -15,7 +15,7 @@
 <strong>输出：</strong>3
 </pre>
 
-<p><strong>示例 1：</strong></p>
+<p><strong>示例 2：</strong></p>
 
 <pre><strong>输入：</strong>m = 3, n = 1, k = 0
 <strong>输出：</strong>1

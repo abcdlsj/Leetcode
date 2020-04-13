@@ -1,8 +1,8 @@
 # Restore IP Addresses **
 - 题目地址: [https://leetcode-cn.com/problems/restore-ip-addresses](https://leetcode-cn.com/problems/restore-ip-addresses)
 - 执行时间: 8 ms
-- 内存消耗: 7 MB
-- 通过日期: 2020-04-08 21:39
+- 内存消耗: 6.7 MB
+- 通过日期: 2020-04-08 21:31
 
 ## 题目内容
 <p>给定一个只包含数字的字符串，复原它并返回所有可能的 IP 地址格式。</p>
@@ -22,7 +22,6 @@ public:
     vector<string> restoreIpAddresses(string s) {
         vector<string> res;
         vector<string> segments;
-        if(s.size() > 12 || s.size() < 4) return res;
         backtrack(res, segments, s, 0);
         return res;
     }
