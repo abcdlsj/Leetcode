@@ -1,6 +1,6 @@
 # Integer Break **
 - 题目地址: [https://leetcode-cn.com/problems/integer-break](https://leetcode-cn.com/problems/integer-break)
-- 执行时间: 0 ms
+- 执行时间: 4 ms
 - 内存消耗: 6.1 MB
 - 通过日期: 2020-04-10 09:10
 
@@ -37,6 +37,7 @@ public:
         //     ans *= 3;
         // }
         // return ans * n;
+        
         vector<int> dp(n + 1, 1);
         for(int i = 3; i <= n; i++) {
             for(int j = 1; j < i; j++) {
