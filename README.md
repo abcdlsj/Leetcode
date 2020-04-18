@@ -1,6 +1,6 @@
 
 ## Leetcode
-目前已解决的题目（158 个，其中简单82 个，中等71 个， 困难5 个）：
+目前已解决的题目（160 个，其中简单82 个，中等72 个， 困难6 个）：
 - [1. Two Sum *](https://github.com/abcdlsj/Leetcode/tree/master/n1.%20Two%20Sum)
 - [2. Add Two Numbers **](https://github.com/abcdlsj/Leetcode/tree/master/n2.%20Add%20Two%20Numbers)
 - [3. Longest Substring Without Repeating Characters **](https://github.com/abcdlsj/Leetcode/tree/master/n3.%20Longest%20Substring%20Without%20Repeating%20Characters)
@@ -76,11 +76,13 @@
 - [231. Power of Two *](https://github.com/abcdlsj/Leetcode/tree/master/n231.%20Power%20of%20Two)
 - [232. Implement Queue using Stacks *](https://github.com/abcdlsj/Leetcode/tree/master/n232.%20Implement%20Queue%20using%20Stacks)
 - [238. Product of Array Except Self **](https://github.com/abcdlsj/Leetcode/tree/master/n238.%20Product%20of%20Array%20Except%20Self)
+- [239. Sliding Window Maximum ***](https://github.com/abcdlsj/Leetcode/tree/master/n239.%20Sliding%20Window%20Maximum)
 - [240. Search a 2D Matrix II **](https://github.com/abcdlsj/Leetcode/tree/master/n240.%20Search%20a%202D%20Matrix%20II)
 - [242. Valid Anagram *](https://github.com/abcdlsj/Leetcode/tree/master/n242.%20Valid%20Anagram)
 - [260. Single Number III **](https://github.com/abcdlsj/Leetcode/tree/master/n260.%20Single%20Number%20III)
 - [279. Perfect Squares **](https://github.com/abcdlsj/Leetcode/tree/master/n279.%20Perfect%20Squares)
 - [287. Find the Duplicate Number **](https://github.com/abcdlsj/Leetcode/tree/master/n287.%20Find%20the%20Duplicate%20Number)
+- [289. Game of Life **](https://github.com/abcdlsj/Leetcode/tree/master/n289.%20Game%20of%20Life)
 - [292. Nim Game *](https://github.com/abcdlsj/Leetcode/tree/master/n292.%20Nim%20Game)
 - [303. Range Sum Query - Immutable *](https://github.com/abcdlsj/Leetcode/tree/master/n303.%20Range%20Sum%20Query%20-%20Immutable)
 - [322. Coin Change **](https://github.com/abcdlsj/Leetcode/tree/master/n322.%20Coin%20Change)
