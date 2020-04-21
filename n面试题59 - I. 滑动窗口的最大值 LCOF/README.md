@@ -1,8 +1,8 @@
 # 滑动窗口的最大值 LCOF *
 - 题目地址: [https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof)
 - 执行时间: 40 ms
-- 内存消耗: 16.1 MB
-- 通过日期: 2020-04-17 20:04
+- 内存消耗: 16.2 MB
+- 通过日期: 2020-04-21 10:50
 
 ## 题目内容
 <p>给定一个数组 <code>nums</code> 和滑动窗口的大小 <code>k</code>，请找出所有滑动窗口里的最大值。</p>
