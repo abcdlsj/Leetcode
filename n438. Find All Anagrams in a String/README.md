@@ -1,8 +1,8 @@
 # Find All Anagrams in a String **
 - 题目地址: [https://leetcode-cn.com/problems/find-all-anagrams-in-a-string](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string)
-- 执行时间: 92 ms
-- 内存消耗: 8.7 MB
-- 通过日期: 2020-04-21 16:28
+- 执行时间: 56 ms
+- 内存消耗: 8.9 MB
+- 通过日期: 2020-04-21 16:37
 
 ## 题目内容
 <p>给定一个字符串 <strong>s </strong>和一个非空字符串 <strong>p</strong>，找到 <strong>s </strong>中所有是 <strong>p </strong>的字母异位词的子串，返回这些子串的起始索引。</p>
