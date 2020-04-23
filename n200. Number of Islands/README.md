@@ -1,11 +1,15 @@
 # Number of Islands **
 - 题目地址: [https://leetcode-cn.com/problems/number-of-islands](https://leetcode-cn.com/problems/number-of-islands)
-- 执行时间: 16 ms
-- 内存消耗: 8.4 MB
-- 通过日期: 2020-04-09 09:59
+- 执行时间: 20 ms
+- 内存消耗: 8.3 MB
+- 通过日期: 2020-04-20 20:16
 
 ## 题目内容
-<p>给定一个由 <code>'1'</code>（陆地）和 <code>'0'</code>（水）组成的的二维网格，计算岛屿的数量。一个岛被水包围，并且它是通过水平方向或垂直方向上相邻的陆地连接而成的。你可以假设网格的四个边均被水包围。</p>
+<p>给你一个由 <code>'1'</code>（陆地）和 <code>'0'</code>（水）组成的的二维网格，请你计算网格中岛屿的数量。</p>
+
+<p>岛屿总是被水包围，并且每座岛屿只能由水平方向和/或竖直方向上相邻的陆地连接形成。</p>
+
+<p>此外，你可以假设该网格的四条边均被水包围。</p>
 
 <p><strong>示例 1:</strong></p>
 
@@ -14,7 +18,6 @@
 11010
 11000
 00000
-
 <strong>输出:</strong> 1
 </pre>
 
@@ -25,8 +28,8 @@
 11000
 00100
 00011
-
 <strong>输出: </strong>3
+<strong>解释: </strong>每座岛屿只能由水平和/或竖直方向上相邻的陆地连接而成。
 </pre>
 
 
@@ -36,28 +39,25 @@
 
 class Solution {
 public:
-    void infect(int i, int j, vector<vector<char>>& grid) {
-        if(i < 0 || i >= grid.size() || j < 0 || j >= grid[0].size() || grid[i][j] == '2' || grid[i][j] == '0')
-            return;
-        else {
-            grid[i][j] = '2';
-            infect(i-1, j, grid);
-            infect(i+1, j, grid);
-            infect(i, j+1, grid);
-            infect(i, j-1, grid);
-        }
-    }
     int numIslands(vector<vector<char>>& grid) {
-        int res = 0;
+        int ans = 0;
         for(int i = 0; i < grid.size(); i++) {
             for(int j = 0; j < grid[0].size(); j++) {
                 if(grid[i][j] == '1') {
-                    infect(i, j, grid);
-                    res++;
+                    dfs(grid, i, j);
+                    ans++;
                 }
             }
         }
-        return res;
+        return ans;
+    }
+    void dfs(vector<vector<char>>& grid, int row, int col) {
+        if(row < 0 || row >= grid.size() || col < 0 || col >= grid[0].size() || grid[row][col] == '2' || grid[row][col] == '0') return;
+        grid[row][col] = '2';
+        dfs(grid, row + 1, col);
+        dfs(grid, row - 1, col);
+        dfs(grid, row, col + 1);
+        dfs(grid, row, col - 1); 
     }
 };
 

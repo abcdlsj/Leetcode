@@ -1,20 +1,18 @@
 // Author: abcdlsj @ https://github.com/abcdlsj/Leetcode
 
 class Solution {
-  public:
+public:
     int maxArea(vector<int>& height) {
-      int MAX = 0, left = 0, right = height.size() - 1;
-      while(left < right) {
-        if(height[left] < height[right]) {
-          MAX = max(MAX, height[left] * (right - left));
-          left ++;
+        int left = 0, right = height.size() - 1, ans = 0;
+        while(left < right) {
+            if(height[left] < height[right]) {
+                ans = max(ans, height[left] * (right - left));
+                left++;
+            } else {
+                ans = max(ans, height[right] * (right - left));
+                right--;
+            }
         }
-        else {
-          MAX = max(MAX, height[right] * (right - left));
-          right --;
-        }
-      }
-      return MAX;
+        return ans;
     }
-  };
-
+};

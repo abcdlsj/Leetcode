@@ -2,27 +2,24 @@
 
 class Solution {
 public:
-    void infect(int i, int j, vector<vector<char>>& grid) {
-        if(i < 0 || i >= grid.size() || j < 0 || j >= grid[0].size() || grid[i][j] == '2' || grid[i][j] == '0')
-            return;
-        else {
-            grid[i][j] = '2';
-            infect(i-1, j, grid);
-            infect(i+1, j, grid);
-            infect(i, j+1, grid);
-            infect(i, j-1, grid);
-        }
-    }
     int numIslands(vector<vector<char>>& grid) {
-        int res = 0;
+        int ans = 0;
         for(int i = 0; i < grid.size(); i++) {
             for(int j = 0; j < grid[0].size(); j++) {
                 if(grid[i][j] == '1') {
-                    infect(i, j, grid);
-                    res++;
+                    dfs(grid, i, j);
+                    ans++;
                 }
             }
         }
-        return res;
+        return ans;
+    }
+    void dfs(vector<vector<char>>& grid, int row, int col) {
+        if(row < 0 || row >= grid.size() || col < 0 || col >= grid[0].size() || grid[row][col] == '2' || grid[row][col] == '0') return;
+        grid[row][col] = '2';
+        dfs(grid, row + 1, col);
+        dfs(grid, row - 1, col);
+        dfs(grid, row, col + 1);
+        dfs(grid, row, col - 1); 
     }
 };

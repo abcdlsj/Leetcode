@@ -1,8 +1,8 @@
 # Balanced Binary Tree *
 - 题目地址: [https://leetcode-cn.com/problems/balanced-binary-tree](https://leetcode-cn.com/problems/balanced-binary-tree)
-- 执行时间: 8 ms
-- 内存消耗: 14.9 MB
-- 通过日期: 2020-04-14 12:23
+- 执行时间: 12 ms
+- 内存消耗: 14.7 MB
+- 通过日期: 2020-04-23 21:13
 
 ## 题目内容
 <p>给定一个二叉树，判断它是否是高度平衡的二叉树。</p>
@@ -66,7 +66,7 @@ public:
         return false;
     }
     int getdepth(TreeNode* root) {
-        return root == NULL ? 0 : max(getdepth(root->left), getdepth(root->right)) + 1;
+        return root == NULL ? 0 : max(getdepth(root->left), getdepth(root->right)) + 1; 
     }
 };
 

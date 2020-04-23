@@ -19,6 +19,6 @@ public:
         return false;
     }
     int getdepth(TreeNode* root) {
-        return root == NULL ? 0 : max(getdepth(root->left), getdepth(root->right)) + 1;
+        return root == NULL ? 0 : max(getdepth(root->left), getdepth(root->right)) + 1; 
     }
 };

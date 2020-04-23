@@ -5,6 +5,7 @@ public:
     vector<string> restoreIpAddresses(string s) {
         vector<string> res;
         vector<string> segments;
+        if(s.size() > 12 || s.size() < 4) return res;
         backtrack(res, segments, s, 0);
         return res;
     }

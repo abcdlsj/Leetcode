@@ -14,9 +14,19 @@
 	<li><code>getMin()</code> —— 检索栈中的最小元素。</li>
 </ul>
 
+
+
 <p><strong>示例:</strong></p>
 
-<pre>MinStack minStack = new MinStack();
+<pre><strong>输入：</strong>
+["MinStack","push","push","push","getMin","pop","top","getMin"]
+[[],[-2],[0],[-3],[],[],[],[]]
+
+<strong>输出：</strong>
+[null,null,null,null,-3,null,0,-2]
+
+<strong>解释：</strong>
+MinStack minStack = new MinStack();
 minStack.push(-2);
 minStack.push(0);
 minStack.push(-3);
@@ -25,6 +35,14 @@ minStack.pop();
 minStack.top();      --> 返回 0.
 minStack.getMin();   --> 返回 -2.
 </pre>
+
+
+
+<p><strong>提示：</strong></p>
+
+<ul>
+	<li><code>pop</code>、<code>top</code> 和 <code>getMin</code> 操作总是在 <strong>非空栈</strong> 上调用。</li>
+</ul>
 
 
 ## 解法

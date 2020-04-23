@@ -1,8 +1,8 @@
 # Reverse Linked List *
 - 题目地址: [https://leetcode-cn.com/problems/reverse-linked-list](https://leetcode-cn.com/problems/reverse-linked-list)
 - 执行时间: 12 ms
-- 内存消耗: 10.5 MB
-- 通过日期: 2020-03-03 16:46
+- 内存消耗: 8.5 MB
+- 通过日期: 2020-04-23 14:36
 
 ## 题目内容
 <p>反转一个单链表。</p>
@@ -31,15 +31,11 @@
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        if(head==NULL || head->next == NULL) {
-            return head;
-        }
-        ListNode *cur = reverseList(head->next);
+        if(head == NULL || head->next == NULL) return head;
+        ListNode *node = reverseList(head->next);
         head->next->next = head;
-
-        head -> next = NULL;
-
-        return cur;
+        head->next = NULL;
+        return node;
     }
 };
 

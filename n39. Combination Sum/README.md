@@ -1,8 +1,8 @@
 # Combination Sum **
 - 题目地址: [https://leetcode-cn.com/problems/combination-sum](https://leetcode-cn.com/problems/combination-sum)
-- 执行时间: 60 ms
-- 内存消耗: 12.5 MB
-- 通过日期: 2020-04-07 18:59
+- 执行时间: 12 ms
+- 内存消耗: 7.7 MB
+- 通过日期: 2020-04-23 21:58
 
 ## 题目内容
 <p>给定一个<strong>无重复元素</strong>的数组 <code>candidates</code> 和一个目标数 <code>target</code> ，找出 <code>candidates</code> 中所有可以使数字和为 <code>target</code> 的组合。</p>
@@ -46,23 +46,19 @@ public:
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
         sort(candidates.begin(), candidates.end());
         vector<vector<int>> res;
-        if(candidates.size() == 0) return res;
         vector<int> path;
-        backtrack(candidates, res, path, 0, target);
+        backtrack(res, path, candidates, target, 0, 0);
         return res;
     }
-    void backtrack(vector<int> candidates, vector<vector<int>> &res, vector<int> path, int start, int target) {
-        if(accumulate(path.begin(), path.end(), 0) == target) {
-            res.push_back(path);
-            return;
-        }
+    void backtrack(vector<vector<int>> &res, vector<int> &path, vector<int> &candidates, int target, int start, int sum) {
+        if(sum > target) return;
+        if(sum == target) res.push_back(path);
         for(int i = start; i < candidates.size(); i++) {
-            if(candidates[i] + accumulate(path.begin(), path.end(), 0) > target) return;
             path.push_back(candidates[i]);
-            backtrack(candidates, res, path, i, target);
+            backtrack(res, path, candidates, target, i, sum + candidates[i]);
             path.pop_back();
         }
     }
-};
+ };
 
 ```

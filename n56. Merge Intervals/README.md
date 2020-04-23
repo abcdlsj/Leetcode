@@ -1,8 +1,8 @@
 # Merge Intervals **
 - 题目地址: [https://leetcode-cn.com/problems/merge-intervals](https://leetcode-cn.com/problems/merge-intervals)
-- 执行时间: 24 ms
-- 内存消耗: 11.9 MB
-- 通过日期: 2020-03-18 22:27
+- 执行时间: 44 ms
+- 内存消耗: 10.5 MB
+- 通过日期: 2020-04-16 07:48
 
 ## 题目内容
 <p>给出一个区间的集合，请合并所有重叠的区间。</p>
@@ -33,10 +33,11 @@ public:
         if(intervals.size() == 0 || intervals.size() == 1) return intervals;
         res.push_back(intervals[0]);
         for(int i = 1; i < intervals.size(); i++) {
-            if(res.back()[1] >= intervals[i][0])
+            if(res.back()[1] >= intervals[i][0]) {
                 res.back()[1] = max(res.back()[1], intervals[i][1]);
-            else
+            } else {
                 res.push_back(intervals[i]);
+            }
         }
         return res;
     }
