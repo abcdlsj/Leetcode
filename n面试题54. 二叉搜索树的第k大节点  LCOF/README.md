@@ -1,8 +1,8 @@
 # 二叉搜索树的第k大节点  LCOF *
 - 题目地址: [https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof)
 - 执行时间: 32 ms
-- 内存消耗: 24.5 MB
-- 通过日期: 2020-04-14 12:03
+- 内存消耗: 24.2 MB
+- 通过日期: 2020-04-24 21:30
 
 ## 题目内容
 <p>给定一棵二叉搜索树，请找出其中第k大的节点。</p>
@@ -57,7 +57,6 @@ public:
     int kthLargest(TreeNode* root, int k) {
         inorderTraversal(root, k);
         return ans;
-        
     }
     void inorderTraversal(TreeNode *root, int k) {
         stack<TreeNode*> stack;

@@ -1,8 +1,8 @@
 # 数组中数字出现的次数 LCOF **
 - 题目地址: [https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof)
 - 执行时间: 44 ms
-- 内存消耗: 16.2 MB
-- 通过日期: 2020-04-17 19:24
+- 内存消耗: 16 MB
+- 通过日期: 2020-04-28 12:28
 
 ## 题目内容
 <p>一个整型数组 <code>nums</code> 里除两个数字之外，其他数字都出现了两次。请写程序找出这两个只出现一次的数字。要求时间复杂度是O(n)，空间复杂度是O(1)。</p>
@@ -38,15 +38,18 @@
 class Solution {
 public:
     vector<int> singleNumbers(vector<int>& nums) {
-        int towNumsXor = 0, ans1 = 0;
-        for(auto num : nums) towNumsXor ^= num;
-        int flag = towNumsXor & (-towNumsXor); //得到一个 1
+        int xorNum = 0, ans1 = 0;
+        for(auto num : nums) {
+            xorNum ^= num;
+        }
+        // 得到最后一个 1
+        int flag = xorNum & (-xorNum);
         for(auto num : nums) {
             if((flag & num) != 0) {
                 ans1 ^= num;
             }
         }
-        return {ans1, towNumsXor ^ ans1};
+        return {ans1, xorNum ^ ans1};
     }
 };
 

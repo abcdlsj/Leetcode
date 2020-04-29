@@ -1,6 +1,6 @@
 
 ## Leetcode
-目前已解决的题目（168 个，其中简单82 个，中等78 个， 困难8 个）：
+目前已解决的题目（170 个，其中简单82 个，中等80 个， 困难8 个）：
 - [1. Two Sum *](https://github.com/abcdlsj/Leetcode/tree/master/n1.%20Two%20Sum)
 - [2. Add Two Numbers **](https://github.com/abcdlsj/Leetcode/tree/master/n2.%20Add%20Two%20Numbers)
 - [3. Longest Substring Without Repeating Characters **](https://github.com/abcdlsj/Leetcode/tree/master/n3.%20Longest%20Substring%20Without%20Repeating%20Characters)
@@ -106,6 +106,7 @@
 - [605. Can Place Flowers *](https://github.com/abcdlsj/Leetcode/tree/master/n605.%20Can%20Place%20Flowers)
 - [617. Merge Two Binary Trees *](https://github.com/abcdlsj/Leetcode/tree/master/n617.%20Merge%20Two%20Binary%20Trees)
 - [622. Design Circular Queue **](https://github.com/abcdlsj/Leetcode/tree/master/n622.%20Design%20Circular%20Queue)
+- [654. Maximum Binary Tree **](https://github.com/abcdlsj/Leetcode/tree/master/n654.%20Maximum%20Binary%20Tree)
 - [700. Search in a Binary Search Tree *](https://github.com/abcdlsj/Leetcode/tree/master/n700.%20Search%20in%20a%20Binary%20Search%20Tree)
 - [704. Binary Search *](https://github.com/abcdlsj/Leetcode/tree/master/n704.%20Binary%20Search)
 - [746. Min Cost Climbing Stairs *](https://github.com/abcdlsj/Leetcode/tree/master/n746.%20Min%20Cost%20Climbing%20Stairs)
@@ -121,6 +122,7 @@
 - [912. Sort an Array **](https://github.com/abcdlsj/Leetcode/tree/master/n912.%20Sort%20an%20Array)
 - [925. Long Pressed Name *](https://github.com/abcdlsj/Leetcode/tree/master/n925.%20Long%20Pressed%20Name)
 - [945. Minimum Increment to Make Array Unique **](https://github.com/abcdlsj/Leetcode/tree/master/n945.%20Minimum%20Increment%20to%20Make%20Array%20Unique)
+- [946. Validate Stack Sequences **](https://github.com/abcdlsj/Leetcode/tree/master/n946.%20Validate%20Stack%20Sequences)
 - [949. Largest Time for Given Digits *](https://github.com/abcdlsj/Leetcode/tree/master/n949.%20Largest%20Time%20for%20Given%20Digits)
 - [970. Powerful Integers *](https://github.com/abcdlsj/Leetcode/tree/master/n970.%20Powerful%20Integers)
 - [994. Rotting Oranges **](https://github.com/abcdlsj/Leetcode/tree/master/n994.%20Rotting%20Oranges)

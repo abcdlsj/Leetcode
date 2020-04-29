@@ -15,7 +15,6 @@ public:
     int kthLargest(TreeNode* root, int k) {
         inorderTraversal(root, k);
         return ans;
-        
     }
     void inorderTraversal(TreeNode *root, int k) {
         stack<TreeNode*> stack;

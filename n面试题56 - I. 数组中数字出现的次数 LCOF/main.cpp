@@ -3,14 +3,17 @@
 class Solution {
 public:
     vector<int> singleNumbers(vector<int>& nums) {
-        int towNumsXor = 0, ans1 = 0;
-        for(auto num : nums) towNumsXor ^= num;
-        int flag = towNumsXor & (-towNumsXor); //得到一个 1
+        int xorNum = 0, ans1 = 0;
+        for(auto num : nums) {
+            xorNum ^= num;
+        }
+        // 得到最后一个 1
+        int flag = xorNum & (-xorNum);
         for(auto num : nums) {
             if((flag & num) != 0) {
                 ans1 ^= num;
             }
         }
-        return {ans1, towNumsXor ^ ans1};
+        return {ans1, xorNum ^ ans1};
     }
 };

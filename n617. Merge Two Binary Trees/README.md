@@ -1,8 +1,8 @@
 # Merge Two Binary Trees *
 - 题目地址: [https://leetcode-cn.com/problems/merge-two-binary-trees](https://leetcode-cn.com/problems/merge-two-binary-trees)
-- 执行时间: 48 ms
-- 内存消耗: 13.4 MB
-- 通过日期: 2019-09-21 16:24
+- 执行时间: 84 ms
+- 内存消耗: 33.2 MB
+- 通过日期: 2020-04-24 09:38
 
 ## 题目内容
 <p>给定两个二叉树，想象当你将它们中的一个覆盖到另一个上时，两个二叉树的一些节点便会重叠。</p>
@@ -47,17 +47,19 @@
 class Solution {
 public:
     TreeNode* mergeTrees(TreeNode* t1, TreeNode* t2) {
-        if(t1==nullptr&&t2==nullptr) return nullptr;
-        if(t1==nullptr&&t2) return t2;
-        if(t2==nullptr&&t1) return t1;
-        else {
+        if(t1 && t2) {
             t1->val += t2->val;
-            t1->left = mergeTrees(t1->left,t2->left);
-            t1->right = mergeTrees(t1->right,t2->right);
+            t1->left = mergeTrees(t1->left, t2->left);
+            t1->right = mergeTrees(t1->right, t2->right);
+        } else if(t1 && t2 == NULL) {
             return t1;
+        } else if(t1 == NULL && t2) {
+            return t2;
+        } else {
+            return NULL;
         }
         return t1;
-     }
+    }
 };
 
 ```
