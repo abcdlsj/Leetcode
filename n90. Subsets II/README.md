@@ -1,8 +1,8 @@
 # Subsets II **
 - 题目地址: [https://leetcode-cn.com/problems/subsets-ii](https://leetcode-cn.com/problems/subsets-ii)
-- 执行时间: 8 ms
-- 内存消耗: 7.7 MB
-- 通过日期: 2020-04-05 13:50
+- 执行时间: 4 ms
+- 内存消耗: 7.8 MB
+- 通过日期: 2020-04-23 23:01
 
 ## 题目内容
 <p>给定一个可能包含重复元素的整数数组 <em><strong>nums</strong></em>，返回该数组所有可能的子集（幂集）。</p>
@@ -40,7 +40,7 @@ public:
     void backtrack(vector<vector<int>> &res, vector<int> path, vector<int> nums, vector<bool> vis, int start) {
         res.push_back(path);
         for(int i = start; i < nums.size(); i++) {
-            if(i > 0 && nums[i] == nums[i - 1] && vis[i - 1] == false) continue;
+            if(i > start && nums[i] == nums[i - 1] && vis[i - 1] == false) continue;
             path.push_back(nums[i]);
             vis[i] = true;
             backtrack(res, path, nums, vis, i + 1);

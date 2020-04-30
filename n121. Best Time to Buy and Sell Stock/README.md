@@ -1,8 +1,8 @@
 # Best Time to Buy and Sell Stock *
 - 题目地址: [https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock)
-- 执行时间: 20 ms
-- 内存消耗: 9.7 MB
-- 通过日期: 2019-09-15 10:36
+- 执行时间: 12 ms
+- 内存消耗: 12.7 MB
+- 通过日期: 2020-04-27 20:23
 
 ## 题目内容
 <p>给定一个数组，它的第 <em>i</em> 个元素是一支给定股票第 <em>i</em> 天的价格。</p>
@@ -36,12 +36,15 @@
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
-        int sum=0,ans=0;
-        for(int i =0;i<(int)prices.size()-1;++i){
-            sum = max(0,sum+prices[i+1]-prices[i]);
-            ans = max(ans,sum);
+        if(prices.size() <= 1) return 0;
+
+        int minprices = prices[0], maxprofit = 0;
+        // i 天的最大获利 = max(前 i-1 天的最大获利，i 天的价格 - 前 i-1 天的最小价格)；
+        for(int i = 1; i < prices.size(); i++) {
+            maxprofit = max(maxprofit, prices[i] - minprices);
+            minprices = min(minprices, prices[i]); 
         }
-        return ans;
+        return maxprofit;
     }
 };
 

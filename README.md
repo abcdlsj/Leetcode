@@ -1,6 +1,6 @@
 
 ## Leetcode
-目前已解决的题目（170 个，其中简单82 个，中等80 个， 困难8 个）：
+目前已解决的题目（177 个，其中简单85 个，中等84 个， 困难8 个）：
 - [1. Two Sum *](https://github.com/abcdlsj/Leetcode/tree/master/n1.%20Two%20Sum)
 - [2. Add Two Numbers **](https://github.com/abcdlsj/Leetcode/tree/master/n2.%20Add%20Two%20Numbers)
 - [3. Longest Substring Without Repeating Characters **](https://github.com/abcdlsj/Leetcode/tree/master/n3.%20Longest%20Substring%20Without%20Repeating%20Characters)
@@ -42,10 +42,14 @@
 - [77. Combinations **](https://github.com/abcdlsj/Leetcode/tree/master/n77.%20Combinations)
 - [78. Subsets **](https://github.com/abcdlsj/Leetcode/tree/master/n78.%20Subsets)
 - [79. Word Search **](https://github.com/abcdlsj/Leetcode/tree/master/n79.%20Word%20Search)
+- [80. Remove Duplicates from Sorted Array II **](https://github.com/abcdlsj/Leetcode/tree/master/n80.%20Remove%20Duplicates%20from%20Sorted%20Array%20II)
+- [83. Remove Duplicates from Sorted List *](https://github.com/abcdlsj/Leetcode/tree/master/n83.%20Remove%20Duplicates%20from%20Sorted%20List)
 - [88. Merge Sorted Array *](https://github.com/abcdlsj/Leetcode/tree/master/n88.%20Merge%20Sorted%20Array)
 - [90. Subsets II **](https://github.com/abcdlsj/Leetcode/tree/master/n90.%20Subsets%20II)
+- [92. Reverse Linked List II **](https://github.com/abcdlsj/Leetcode/tree/master/n92.%20Reverse%20Linked%20List%20II)
 - [93. Restore IP Addresses **](https://github.com/abcdlsj/Leetcode/tree/master/n93.%20Restore%20IP%20Addresses)
 - [94. Binary Tree Inorder Traversal **](https://github.com/abcdlsj/Leetcode/tree/master/n94.%20Binary%20Tree%20Inorder%20Traversal)
+- [100. Same Tree *](https://github.com/abcdlsj/Leetcode/tree/master/n100.%20Same%20Tree)
 - [102. Binary Tree Level Order Traversal **](https://github.com/abcdlsj/Leetcode/tree/master/n102.%20Binary%20Tree%20Level%20Order%20Traversal)
 - [104. Maximum Depth of Binary Tree *](https://github.com/abcdlsj/Leetcode/tree/master/n104.%20Maximum%20Depth%20of%20Binary%20Tree)
 - [108. Convert Sorted Array to Binary Search Tree *](https://github.com/abcdlsj/Leetcode/tree/master/n108.%20Convert%20Sorted%20Array%20to%20Binary%20Search%20Tree)
@@ -60,8 +64,10 @@
 - [137. Single Number II **](https://github.com/abcdlsj/Leetcode/tree/master/n137.%20Single%20Number%20II)
 - [141. Linked List Cycle *](https://github.com/abcdlsj/Leetcode/tree/master/n141.%20Linked%20List%20Cycle)
 - [142. Linked List Cycle II **](https://github.com/abcdlsj/Leetcode/tree/master/n142.%20Linked%20List%20Cycle%20II)
+- [143. Reorder List **](https://github.com/abcdlsj/Leetcode/tree/master/n143.%20Reorder%20List)
 - [144. Binary Tree Preorder Traversal **](https://github.com/abcdlsj/Leetcode/tree/master/n144.%20Binary%20Tree%20Preorder%20Traversal)
 - [145. Binary Tree Postorder Traversal ***](https://github.com/abcdlsj/Leetcode/tree/master/n145.%20Binary%20Tree%20Postorder%20Traversal)
+- [148. Sort List **](https://github.com/abcdlsj/Leetcode/tree/master/n148.%20Sort%20List)
 - [151. Reverse Words in a String **](https://github.com/abcdlsj/Leetcode/tree/master/n151.%20Reverse%20Words%20in%20a%20String)
 - [155. Min Stack *](https://github.com/abcdlsj/Leetcode/tree/master/n155.%20Min%20Stack)
 - [160. Intersection of Two Linked Lists *](https://github.com/abcdlsj/Leetcode/tree/master/n160.%20Intersection%20of%20Two%20Linked%20Lists)
@@ -71,6 +77,7 @@
 - [198. House Robber *](https://github.com/abcdlsj/Leetcode/tree/master/n198.%20House%20Robber)
 - [199. Binary Tree Right Side View **](https://github.com/abcdlsj/Leetcode/tree/master/n199.%20Binary%20Tree%20Right%20Side%20View)
 - [200. Number of Islands **](https://github.com/abcdlsj/Leetcode/tree/master/n200.%20Number%20of%20Islands)
+- [202. Happy Number *](https://github.com/abcdlsj/Leetcode/tree/master/n202.%20Happy%20Number)
 - [204. Count Primes *](https://github.com/abcdlsj/Leetcode/tree/master/n204.%20Count%20Primes)
 - [205. Isomorphic Strings *](https://github.com/abcdlsj/Leetcode/tree/master/n205.%20Isomorphic%20Strings)
 - [206. Reverse Linked List *](https://github.com/abcdlsj/Leetcode/tree/master/n206.%20Reverse%20Linked%20List)
