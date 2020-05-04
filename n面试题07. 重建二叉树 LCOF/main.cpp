@@ -16,9 +16,9 @@ public:
     }
     TreeNode* build(vector<int>& preorder, vector<int>& inorder, int root, int begin, int end) {
         if(begin > end) return NULL;
-        TreeNode* tree = new TreeNode(preorder[root]);
         int i = begin;
-        while(i < end && preorder[root] != inorder[i]) i++;
+        while(i <= end && inorder[i] != preorder[root]) i++;
+        TreeNode* tree = new TreeNode(preorder[root]);
         tree->left = build(preorder, inorder, root + 1, begin, i - 1);
         tree->right = build(preorder, inorder, root + i - begin + 1, i + 1, end);
         return tree;

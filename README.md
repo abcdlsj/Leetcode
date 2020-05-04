@@ -1,6 +1,6 @@
 
 ## Leetcode
-目前已解决的题目（177 个，其中简单85 个，中等84 个， 困难8 个）：
+目前已解决的题目（178 个，其中简单85 个，中等85 个， 困难8 个）：
 - [1. Two Sum *](https://github.com/abcdlsj/Leetcode/tree/master/n1.%20Two%20Sum)
 - [2. Add Two Numbers **](https://github.com/abcdlsj/Leetcode/tree/master/n2.%20Add%20Two%20Numbers)
 - [3. Longest Substring Without Repeating Characters **](https://github.com/abcdlsj/Leetcode/tree/master/n3.%20Longest%20Substring%20Without%20Repeating%20Characters)
@@ -107,6 +107,7 @@
 - [423. Reconstruct Original Digits from English **](https://github.com/abcdlsj/Leetcode/tree/master/n423.%20Reconstruct%20Original%20Digits%20from%20English)
 - [434. Number of Segments in a String *](https://github.com/abcdlsj/Leetcode/tree/master/n434.%20Number%20of%20Segments%20in%20a%20String)
 - [438. Find All Anagrams in a String **](https://github.com/abcdlsj/Leetcode/tree/master/n438.%20Find%20All%20Anagrams%20in%20a%20String)
+- [450. Delete Node in a BST **](https://github.com/abcdlsj/Leetcode/tree/master/n450.%20Delete%20Node%20in%20a%20BST)
 - [461. Hamming Distance *](https://github.com/abcdlsj/Leetcode/tree/master/n461.%20Hamming%20Distance)
 - [521. Longest Uncommon Subsequence I  *](https://github.com/abcdlsj/Leetcode/tree/master/n521.%20Longest%20Uncommon%20Subsequence%20I)
 - [581. Shortest Unsorted Continuous Subarray *](https://github.com/abcdlsj/Leetcode/tree/master/n581.%20Shortest%20Unsorted%20Continuous%20Subarray)

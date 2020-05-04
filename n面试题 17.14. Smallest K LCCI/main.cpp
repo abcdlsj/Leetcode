@@ -2,47 +2,26 @@
 
 class Solution {
 public:
-    // int quicksort(vector<int> &arr, int begin, int end) {
-        // int cpr = arr[end];
-        // int left = begin, right = end - 1;
-        // while(left < right) {
-            // while(left < right && arr[left] < cpr) left ++;
-            // while(left < right && arr[right] >= cpr) right --;
-            // swap(arr[left],arr[right]);
-        // }
-        // swap(arr[left],arr[end]);
-        // return left; 
-    // }
-    int partition(vector<int> &arr, int begin, int end) {
-        int cpr = arr[end];
-        int left = begin - 1, right = begin;
-        for(; right < end; ++right) {
-            if(arr[right] <= cpr) {
-                ++ left;
-                swap(arr[left], arr[right]);
-            }
-        }
-        swap(arr[left+1], arr[end]);
-        return left+1; 
-    }
-    void quick_sort(vector<int> &arr,int left,int right,int k) {
-        if(left < right && left < k){
-            int p = partition(arr, left, right);
-            quick_sort(arr, left, p-1, k);
-            if(p < k)
-            {
-                quick_sort(arr, p+1, right, k);
-            }   
-        }
-    }
     vector<int> smallestK(vector<int>& arr, int k) {
+        int n = arr.size(), end = n - 1;
         vector<int> res;
-        if(k == 0) return res;
-        if(arr.size() == k) return arr;
-        quick_sort(arr, 0, arr.size() - 1, k);
-        for(int i = 0; i < k; i++) {
-            res.push_back(arr[i]);
+        for(int i = n / 2; i >= 0; i--) sink(arr, i, n - 1);
+        while(k--) {
+            res.push_back(arr[0]);
+            swap(arr[0], arr[end--]);
+            sink(arr, 0, end);
         }
         return res;
+    }
+    void sink(vector<int> &arr, int index, int end) {
+        int sltIdx = index, left = index * 2 + 1, right = index * 2 + 2;
+
+        if(left <= end && arr[left] < arr[sltIdx]) sltIdx = left;
+        if(right <= end && arr[right] < arr[sltIdx]) sltIdx = right;
+
+        if(sltIdx != index) {
+            swap(arr[index], arr[sltIdx]);
+            sink(arr, sltIdx, end);
+        }
     }
 };

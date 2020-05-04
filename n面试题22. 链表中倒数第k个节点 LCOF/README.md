@@ -1,8 +1,8 @@
 # 链表中倒数第k个节点 LCOF *
 - 题目地址: [https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof)
-- 执行时间: 4 ms
+- 执行时间: 8 ms
 - 内存消耗: 10.6 MB
-- 通过日期: 2020-04-13 09:52
+- 通过日期: 2020-05-01 21:37
 
 ## 题目内容
 <p>输入一个链表，输出该链表中倒数第k个节点。为了符合大多数人的习惯，本题从1开始计数，即链表的尾节点是倒数第1个节点。例如，一个链表有6个节点，从头节点开始，它们的值依次是1、2、3、4、5、6。这个链表的倒数第3个节点是值为4的节点。</p>
@@ -30,18 +30,15 @@
  */
 class Solution {
 public:
-    ListNode* getKthFromEnd(ListNode* head, int k) {
-        ListNode *fast = head, *slow = head;
-        if(fast == NULL) return head;
-        while(k >= 1) {
+    ListNode* getKthFromEnd(ListNode* pListHead, int k) {
+        if(pListHead == NULL || k == 0) return NULL;
+        ListNode *slow = pListHead, *fast = pListHead;
+        for(int i = 1; i < k && fast; i++) fast = fast->next;
+        while(fast != NULL && fast->next != NULL) {
             fast = fast->next;
-            k--;
-        } 
-        while(fast) {
             slow = slow->next;
-            fast = fast->next;
         }
-        return slow;
+        return fast == NULL ? NULL : slow;
     }
 };
 

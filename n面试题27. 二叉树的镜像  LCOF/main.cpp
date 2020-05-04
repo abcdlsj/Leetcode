@@ -12,10 +12,15 @@
 class Solution {
 public:
     TreeNode* mirrorTree(TreeNode* root) {
-        if(root == nullptr) return nullptr;
-        TreeNode *tmp = root->left;
+        // if(root == NULL) return NULL;
+        // swap(root->left, root->right);
+        // root->left = mirrorTree(root->left);
+        // root->right = mirrorTree(root->right);
+        // return root;
+        if(root == NULL) return NULL;
+        TreeNode* cLeft = root->left;
         root->left = mirrorTree(root->right);
-        root->right = mirrorTree(tmp);
-        return root;
+        root->right = mirrorTree(cLeft);
+        return root; 
     }
 };

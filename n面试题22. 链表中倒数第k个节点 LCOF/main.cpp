@@ -10,17 +10,14 @@
  */
 class Solution {
 public:
-    ListNode* getKthFromEnd(ListNode* head, int k) {
-        ListNode *fast = head, *slow = head;
-        if(fast == NULL) return head;
-        while(k >= 1) {
+    ListNode* getKthFromEnd(ListNode* pListHead, int k) {
+        if(pListHead == NULL || k == 0) return NULL;
+        ListNode *slow = pListHead, *fast = pListHead;
+        for(int i = 1; i < k && fast; i++) fast = fast->next;
+        while(fast != NULL && fast->next != NULL) {
             fast = fast->next;
-            k--;
-        } 
-        while(fast) {
             slow = slow->next;
-            fast = fast->next;
         }
-        return slow;
+        return fast == NULL ? NULL : slow;
     }
 };

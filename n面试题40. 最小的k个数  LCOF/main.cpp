@@ -2,36 +2,28 @@
 
 class Solution {
 public:
-    int partition(vector<int> &arr, int begin, int end) {
-        int cpr = arr[end];
-        int left = begin - 1, right = begin;
-        for(; right < end; ++right) {
-            if(arr[right] <= cpr) {
-                ++ left;
-                swap(arr[left], arr[right]);
-            }
-        }
-        swap(arr[left+1], arr[end]);
-        return left+1; 
-    }
-    void quick_sort(vector<int> &arr,int left,int right,int k) {
-        if(left < right && left < k){
-            int p = partition(arr, left, right);
-            quick_sort(arr, left, p-1, k);
-            if(p < k)
-            {
-                quick_sort(arr, p+1, right, k);
-            }   
-        }
-    }
     vector<int> getLeastNumbers(vector<int>& arr, int k) {
-        vector<int> res;
-        if(k == 0) return res;
-        if(arr.size() == k) return arr;
-        quick_sort(arr, 0, arr.size() - 1, k);
-        for(int i = 0; i < k; i++) {
-            res.push_back(arr[i]);
+		int n = arr.size(); vector<int> res;
+        if(n == 0 || k == 0 || k > n) return res;
+        if(k == n) return arr;
+        for(int i = (n - 1) / 2; i >= 0; i--) sink(arr, i, n);
+        while(k--) {
+            res.push_back(arr[0]);
+            swap(arr[0], arr[n - 1]);
+            sink(arr, 0, --n);
         }
         return res;
+    }
+    // 小顶堆
+    void sink(vector<int> &arr, int index, int end) {
+        int leastIdx = index, left = index * 2 + 1, right = index * 2 + 2;
+
+        if(left < end && arr[leastIdx] > arr[left]) leastIdx = left;
+        if(right < end && arr[leastIdx] > arr[right]) leastIdx = right;
+        
+        if(leastIdx != index) {
+            swap(arr[leastIdx], arr[index]);
+            sink(arr, leastIdx, end);
+        }
     }
 };
