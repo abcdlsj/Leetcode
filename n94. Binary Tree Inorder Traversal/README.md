@@ -1,8 +1,8 @@
 # Binary Tree Inorder Traversal **
 - 题目地址: [https://leetcode-cn.com/problems/binary-tree-inorder-traversal](https://leetcode-cn.com/problems/binary-tree-inorder-traversal)
 - 执行时间: 0 ms
-- 内存消耗: 9.2 MB
-- 通过日期: 2020-04-12 09:27
+- 内存消耗: 7.3 MB
+- 通过日期: 2020-05-05 21:10
 
 ## 题目内容
 <p>给定一个二叉树，返回它的<em>中序 </em>遍历。</p>
@@ -36,12 +36,18 @@
  */
 class Solution {
 public:
-    vector<int> res;
     vector<int> inorderTraversal(TreeNode* root) {
-        if(root) {
-            inorderTraversal(root->left);
-            res.push_back(root->val);
-            inorderTraversal(root->right);
+        vector<int> res;
+        stack<TreeNode*> stack;
+        TreeNode* cur = root;
+        while(!stack.empty() || cur) {
+            while(cur) {
+                stack.push(cur);
+                cur = cur->left;
+            }
+            TreeNode *node = stack.top(); stack.pop();
+            res.push_back(node->val);
+            if(node->right) cur = node->right;
         }
         return res;
     }

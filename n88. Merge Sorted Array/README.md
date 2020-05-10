@@ -1,8 +1,8 @@
 # Merge Sorted Array *
 - 题目地址: [https://leetcode-cn.com/problems/merge-sorted-array](https://leetcode-cn.com/problems/merge-sorted-array)
-- 执行时间: 16 ms
-- 内存消耗: 8.6 MB
-- 通过日期: 2019-08-27 10:47
+- 执行时间: 0 ms
+- 内存消耗: 9 MB
+- 通过日期: 2020-05-02 10:02
 
 ## 题目内容
 <p>给你两个有序整数数组 <em>nums1 </em>和 <em>nums2</em>，请你将 <em>nums2 </em>合并到 <em>nums1 </em>中<em>，</em>使 <em>nums1 </em>成为一个有序数组。</p>
@@ -34,9 +34,14 @@ nums2 = [2,5,6],       n = 3
 class Solution {
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
-        for(int i=m;i<m+n;i++)
-            nums1[i]=nums2[i-m];
-        sort(nums1.begin(),nums1.end());
+        int cur = m + n - 1, p1 = m - 1, p2 = n - 1;
+        while(p2 >= 0) {
+            if(p1 == -1 || nums1[p1] < nums2[p2]) {
+                nums1[cur--] = nums2[p2--];
+            } else {
+                nums1[cur--] = nums1[p1--];
+            }
+        }
     }
 };
 

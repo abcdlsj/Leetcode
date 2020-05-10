@@ -11,8 +11,9 @@
  */
 class Solution {
 public:
-    vector<int> inorderTraversal(TreeNode* root) {
-        vector<int> res;
+    long pre = LONG_MIN;
+    bool isValidBST(TreeNode* root) {
+        if(root == NULL) return true;
         stack<TreeNode*> stack;
         TreeNode* cur = root;
         while(!stack.empty() || cur) {
@@ -20,10 +21,16 @@ public:
                 stack.push(cur);
                 cur = cur->left;
             }
-            TreeNode *node = stack.top(); stack.pop();
-            res.push_back(node->val);
+            TreeNode* node = stack.top(); stack.pop();
+            if(pre >= node->val) return false;
+            pre = node->val;
             if(node->right) cur = node->right;
         }
-        return res;
+        return true;
+        // if(!root) return true;
+        // if(!isValidBST(root->left)) return false;
+        // if(pre >= root->val) return false;
+        // pre = root->val;
+        // return isValidBST(root->right);
     }
 };

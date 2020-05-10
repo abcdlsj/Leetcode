@@ -11,8 +11,8 @@
  */
 class Solution {
 public:
-    vector<int> res;
     vector<int> postorderTraversal(TreeNode* root) {
+        vector<int> res;
         stack<TreeNode*> stack1, stack2;
         if(root) {
             stack1.push(root);

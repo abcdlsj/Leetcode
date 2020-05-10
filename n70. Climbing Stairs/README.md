@@ -1,8 +1,8 @@
 # Climbing Stairs *
 - 题目地址: [https://leetcode-cn.com/problems/climbing-stairs](https://leetcode-cn.com/problems/climbing-stairs)
-- 执行时间: 4 ms
-- 内存消耗: 8.5 MB
-- 通过日期: 2019-09-15 19:44
+- 执行时间: 0 ms
+- 内存消耗: 6.2 MB
+- 通过日期: 2020-04-30 10:55
 
 ## 题目内容
 <p>假设你正在爬楼梯。需要 <em>n</em> 阶你才能到达楼顶。</p>
@@ -37,13 +37,11 @@
 class Solution {
 public:
     int climbStairs(int n) {
-        if(n==1) return 1;
-        if(n==2) return 2;
-        vector<int> cnt(n+1,0);
-        cnt[1]=1;
-        cnt[2]=2;
-        for(int i=3;i<=n;i++){
-            cnt[i] =cnt[i-1]+cnt[i-2];
+        if(n == 1 || n == 2) return n;
+        vector<int> cnt(n + 1, 0);
+        cnt[1] = 1, cnt[2] = 2;
+        for(int i = 3; i <= n; i++) {
+            cnt[i] = cnt[i-1] + cnt[i-2];
         }
         return cnt[n];
     }

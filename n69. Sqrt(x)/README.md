@@ -1,8 +1,8 @@
 # Sqrt(x) *
 - 题目地址: [https://leetcode-cn.com/problems/sqrtx](https://leetcode-cn.com/problems/sqrtx)
-- 执行时间: 16 ms
-- 内存消耗: 8.2 MB
-- 通过日期: 2019-08-29 10:41
+- 执行时间: 4 ms
+- 内存消耗: 6 MB
+- 通过日期: 2020-05-09 15:31
 
 ## 题目内容
 <p>实现 <code>int sqrt(int x)</code> 函数。</p>
@@ -30,23 +30,21 @@
 ```cpp
 // Author: abcdlsj @ https://github.com/abcdlsj/Leetcode
 
-/*
- * @lc app=leetcode.cn id=69 lang=cpp
- *
- * [69] x 的平方根
- */
 class Solution {
 public:
-    int mySqrt(int x)
-    {
-        if(x==0) return 0;
-        long res=x;
-        while(res*res>x)
-            res=(res+x/res)/2;
-        return (int)res; 
+    int mySqrt(int x) {
+        int low = 0, hign = x, mid, ans;
+        while(low <= hign) {
+            mid = low + (hign - low) / 2;
+            if((long long)mid * mid <= x) {
+                ans = mid;
+                low = mid + 1;
+            } else {
+                hign = mid - 1;
+            }
+        }
+        return ans;
     }
 };
-
-
 
 ```
