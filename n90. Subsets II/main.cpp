@@ -13,7 +13,7 @@ public:
     void backtrack(vector<vector<int>> &res, vector<int> path, vector<int> nums, vector<bool> vis, int start) {
         res.push_back(path);
         for(int i = start; i < nums.size(); i++) {
-            if(i > start && nums[i] == nums[i - 1] && vis[i - 1] == false) continue;
+            if(i > 0 && nums[i] == nums[i - 1] && vis[i - 1] == false) continue;
             path.push_back(nums[i]);
             vis[i] = true;
             backtrack(res, path, nums, vis, i + 1);

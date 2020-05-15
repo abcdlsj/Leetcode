@@ -25,7 +25,7 @@
 <p><strong>限制：</strong></p>
 
 <ul>
-	<li><code>2 <= nums <= 10000</code></li>
+	<li><code>2 <= nums.length <= 10000</code></li>
 </ul>
 
 

@@ -1,8 +1,8 @@
 # Combination Sum III **
 - 题目地址: [https://leetcode-cn.com/problems/combination-sum-iii](https://leetcode-cn.com/problems/combination-sum-iii)
-- 执行时间: 0 ms
-- 内存消耗: 6.5 MB
-- 通过日期: 2020-04-23 22:14
+- 执行时间: 4 ms
+- 内存消耗: 6.4 MB
+- 通过日期: 2020-04-23 22:34
 
 ## 题目内容
 <p>找出所有相加之和为 <em><strong>n</strong> </em>的 <strong><em>k </em></strong>个数的组合<strong><em>。</em></strong>组合中只允许含有 1 - 9 的正整数，并且每种组合中不存在重复的数字。</p>

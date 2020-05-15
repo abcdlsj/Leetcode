@@ -5,26 +5,24 @@ public:
     vector<vector<string>> partition(string s) {
         vector<vector<string>> res;
         vector<string> path;
-        if(s.size() == 0) return res;
-        backtrack(res, path, 0, s);
+        backtrack(res, path, s, 0);
         return res;
     }
-    void backtrack(vector<vector<string>> &res, vector<string> &path, int start, const string &s) {
-        if(start >= s.size()) {
-            res.push_back(path);
-            return;
-        }
-        string tmp = "";
+    void backtrack(vector<vector<string>> &res, vector<string> &path, const string &s, int start) {
+        if(start == s.size()) res.push_back(path);
+
         for(int i = start; i < s.size(); i++) {
-            tmp.push_back(s[i]);
-            if(ispalindrome(tmp)) {
-                path.push_back(tmp);
-                backtrack(res, path, i + 1, s);
+            string ss = s.substr(start, i - start + 1);
+            if(ispa(ss)) {
+                path.push_back(ss);
+                backtrack(res, path, s, i + 1);
                 path.pop_back();
+            } else {
+                continue;
             }
         }
     }
-    bool ispalindrome(const string &s) {
+    bool ispa(string s) {
         return s == string(s.rbegin(), s.rend());
     }
 };

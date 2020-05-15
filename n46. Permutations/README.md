@@ -1,8 +1,8 @@
 # Permutations **
 - 题目地址: [https://leetcode-cn.com/problems/permutations](https://leetcode-cn.com/problems/permutations)
-- 执行时间: 28 ms
-- 内存消耗: 8.8 MB
-- 通过日期: 2020-04-05 10:31
+- 执行时间: 16 ms
+- 内存消耗: 8.5 MB
+- 通过日期: 2020-04-25 00:52
 
 ## 题目内容
 <p>给定一个<strong> 没有重复</strong> 数字的序列，返回其所有可能的全排列。</p>

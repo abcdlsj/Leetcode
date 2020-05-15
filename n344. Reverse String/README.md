@@ -1,8 +1,8 @@
 # Reverse String *
 - 题目地址: [https://leetcode-cn.com/problems/reverse-string](https://leetcode-cn.com/problems/reverse-string)
-- 执行时间: 96 ms
-- 内存消耗: 14.2 MB
-- 通过日期: 2020-03-16 19:09
+- 执行时间: 48 ms
+- 内存消耗: 23.2 MB
+- 通过日期: 2020-05-10 19:50
 
 ## 题目内容
 <p>编写一个函数，其作用是将输入的字符串反转过来。输入字符串以字符数组 <code>char[]</code> 的形式给出。</p>
@@ -32,14 +32,9 @@
 class Solution {
 public:
     void reverseString(vector<char>& s) {
-        int n = s.size();
-        if(n == 1) return;
-        for(int i = 0; i < n/2; i++) {
-            s[i] = s[n-i-1]^s[i];
-            s[n-i-1] = s[n-i-1]^s[i];
-            s[i] = s[n-i-1]^s[i];
+        for(int i = 0; i < s.size() / 2; i++) {
+            swap(s[i], s[s.size() - i - 1]);
         }
-        return;
     }
 };
 

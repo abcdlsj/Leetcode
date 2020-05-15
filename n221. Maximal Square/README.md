@@ -1,8 +1,8 @@
 # Maximal Square **
 - 题目地址: [https://leetcode-cn.com/problems/maximal-square](https://leetcode-cn.com/problems/maximal-square)
-- 执行时间: 24 ms
+- 执行时间: 16 ms
 - 内存消耗: 8.8 MB
-- 通过日期: 2020-04-09 09:52
+- 通过日期: 2020-05-08 15:06
 
 ## 题目内容
 <p>在一个由 0 和 1 组成的二维矩阵内，找到只包含 1 的最大正方形，并返回其面积。</p>

@@ -13,20 +13,48 @@ public:
         }
     }
     //快排
-    void quick_sort(vector<int> &nums, int begin, int end) {
-        while (begin >= end) return;
-        int cpr = nums[end];
-        int left = begin, right = end - 1;
+    int partition(vector<int> &nums, int begin, int end) {
+        int cpr = nums[end], left = begin, right = end - 1;
         while(left < right) {
             while (left < right && nums[left] < cpr) ++left;
             while (left < right && nums[right] >= cpr) --right;
             swap(nums[left], nums[right]);
         }
-        if(nums[left] >= nums[end])
+        if(nums[left] >= nums[end]) {
             swap(nums[left], nums[end]);
-        else ++left;
-        quick_sort(nums, begin, left - 1);
-        quick_sort(nums, left + 1, end);
+        } else {
+            ++left;
+        }
+        return left;
+    }
+
+    void quick_sort(vector<int> &nums, int begin, int end) {
+        if(begin >= end) return;
+        int p = partition(nums, begin, end);
+        if(p > begin) quick_sort(nums, begin, p - 1);
+        if(p < end) quick_sort(nums, p + 1, end); 
+    }
+    //非递归快排
+    void iter_quick_sort(vector<int> &nums, int begin, int end) {
+        stack<int> stack;
+        stack.push(end);
+        stack.push(begin);
+        int left, right;
+        while(!stack.empty()) {
+            left = stack.top(); stack.pop();
+            right = stack.top(); stack.pop();
+            if(left < right) {
+                int p = partition(nums, left, right);
+                if(p > left) {
+                    stack.push(p - 1);
+                    stack.push(left);
+                }
+                if(p < right) {
+                    stack.push(right);
+                    stack.push(p + 1);
+                }
+            }
+        }
     }
     //插入
     void insertion_sort(vector<int> &nums) {
@@ -86,10 +114,10 @@ public:
     }
 
     vector<int> sortArray(vector<int>& nums) {
-        // quick_sort(nums, 0, nums.size() - 1);
+        iter_quick_sort(nums, 0, nums.size() - 1);
         // bubble_sort(nums);
         // insertion_sort(nums);
-        MergeSort(nums, 0, nums.size() - 1);
+        // MergeSort(nums, 0, nums.size() - 1);
         return nums;
     }
 };

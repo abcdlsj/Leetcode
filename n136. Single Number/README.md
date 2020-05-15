@@ -1,8 +1,8 @@
 # Single Number *
 - 题目地址: [https://leetcode-cn.com/problems/single-number](https://leetcode-cn.com/problems/single-number)
-- 执行时间: 4 ms
-- 内存消耗: 13 MB
-- 通过日期: 2020-03-20 12:33
+- 执行时间: 20 ms
+- 内存消耗: 11.5 MB
+- 通过日期: 2020-05-14 07:27
 
 ## 题目内容
 <p>给定一个<strong>非空</strong>整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。</p>
@@ -30,10 +30,11 @@
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
-        int cnt = 0;
-        for(auto i : nums) 
-            cnt ^= i;
-        return cnt;
+        int ans = 0;
+        for(auto num : nums) {
+            ans ^= num;
+        }
+        return ans;
     }
 };
 

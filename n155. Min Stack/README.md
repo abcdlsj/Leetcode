@@ -1,8 +1,8 @@
 # Min Stack *
 - 题目地址: [https://leetcode-cn.com/problems/min-stack](https://leetcode-cn.com/problems/min-stack)
-- 执行时间: 92 ms
-- 内存消耗: 15.3 MB
-- 通过日期: 2020-04-01 00:08
+- 执行时间: 48 ms
+- 内存消耗: 14.6 MB
+- 通过日期: 2020-05-12 08:32
 
 ## 题目内容
 <p>设计一个支持 <code>push</code> ，<code>pop</code> ，<code>top</code> 操作，并能在常数时间内检索到最小元素的栈。</p>
@@ -51,28 +51,33 @@ minStack.getMin();   --> 返回 -2.
 
 class MinStack {
 public:
-    stack<int> main;
-    stack<int> ass;
-    /** initialize your data structure here. */
+    stack<int> dataStack;
+    stack<int> minStack;
+    /** initialize our data structure here. */
     MinStack() {
     }
     
     void push(int x) {
-        main.push(x);
-        if(ass.empty() || ass.top() >= x) ass.push(x);
+        dataStack.push(x);
+        if(minStack.empty() || x <= minStack.top()) {
+            minStack.push(x);
+        }
     }
     
     void pop() {
-        if(main.top() == ass.top()) ass.pop();
-        main.pop();
+        if(minStack.top() == dataStack.top()) {
+            minStack.pop();
+        }
+        dataStack.pop();
+
     }
     
     int top() {
-        return main.top();
+        return dataStack.top();
     }
     
     int getMin() {
-        return ass.top();
+        return minStack.top();
     }
 };
 

@@ -2,7 +2,7 @@
 - 题目地址: [https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array)
 - 执行时间: 16 ms
 - 内存消耗: 7.5 MB
-- 通过日期: 2020-04-09 18:05
+- 通过日期: 2020-04-27 13:35
 
 ## 题目内容
 <p>给定一个排序数组，你需要在<strong><a href="http://baike.baidu.com/item/%E5%8E%9F%E5%9C%B0%E7%AE%97%E6%B3%95" target="_blank"> 原地</a></strong> 删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。</p>
@@ -56,14 +56,15 @@ for (int i = 0; i < len; i++) {
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
-        if(nums.size() < 2) return nums.size();
-
-        int left = 0;
-        for(int right = 1; right < nums.size(); right++) {
-            if(nums[left] != nums[right]) 
-                nums[++left] = nums[right];
+        if(nums.size() == 0 || nums.size() == 1) return nums.size();
+        int left = 0, cur = 0;
+        while(cur < nums.size()) {
+            if(nums[left] != nums[cur]) {
+                nums[++left] = nums[cur++];
+            } else {
+                cur++;
+            }
         }
-        
         return ++left;
     }
 };

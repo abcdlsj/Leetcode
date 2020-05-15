@@ -3,18 +3,22 @@
 class Solution {
 public:
     string simplifyPath(string path) {
-        stringstream is(path);
-        string tmp = "", res = "";
-        vector<string> strs;
-        while(getline(is, tmp, '/')) {
-            if(tmp == "" || tmp == ".") continue;
-            else if(tmp == ".." && !strs.empty()) strs.pop_back();
-            else if(tmp != "..") strs.push_back(tmp);
+        string res = "", dir = "";
+        vector<string> vec;
+        path += "/";
+        for(auto c : path) {
+            if(c == '/') {
+                if(!vec.empty() && dir == "..") vec.pop_back();
+                else if(!dir.empty() && dir != ".." && dir != ".") vec.push_back(dir);
+                dir.clear();
+            } else {
+                dir += c;
+            }
         }
-        for(auto str : strs) {
-            res += "/" + str;
+        if(vec.empty()) return "/";
+        for(auto s : vec) {
+            res += '/' + s;
         }
-        if(strs.empty()) res += "/";
         return res;
     }
 };

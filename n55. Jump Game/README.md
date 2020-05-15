@@ -1,8 +1,8 @@
 # Jump Game **
 - 题目地址: [https://leetcode-cn.com/problems/jump-game](https://leetcode-cn.com/problems/jump-game)
-- 执行时间: 8 ms
-- 内存消耗: 7.8 MB
-- 通过日期: 2020-04-17 08:50
+- 执行时间: 36 ms
+- 内存消耗: 12.8 MB
+- 通过日期: 2020-05-04 09:41
 
 ## 题目内容
 <p>给定一个非负整数数组，你最初位于数组的第一个位置。</p>

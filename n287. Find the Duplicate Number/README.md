@@ -1,8 +1,8 @@
 # Find the Duplicate Number **
 - 题目地址: [https://leetcode-cn.com/problems/find-the-duplicate-number](https://leetcode-cn.com/problems/find-the-duplicate-number)
-- 执行时间: 12 ms
-- 内存消耗: 12.5 MB
-- 通过日期: 2020-03-23 21:25
+- 执行时间: 20 ms
+- 内存消耗: 10.8 MB
+- 通过日期: 2020-05-07 10:49
 
 ## 题目内容
 <p>给定一个包含 <em>n</em> + 1 个整数的数组 <em>nums</em>，其数字都在 1 到 <em>n </em>之间（包括 1 和 <em>n</em>），可知至少存在一个重复的整数。假设只有一个重复的整数，找出这个重复的数。</p>
@@ -36,18 +36,26 @@
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
-        int fast = 0, slow = 0;
-        while(true) {
-            fast = nums[nums[fast]];
-            slow = nums[slow];
-            if(fast == slow) break;
+        // int fast = 0, slow = 0;
+        // while(true) {
+        //     fast = nums[nums[fast]];
+        //     slow = nums[slow];
+        //     if(fast == slow) break;
+        // }
+        // fast = 0;
+        // while(fast != slow) {
+        //     fast = nums[fast];
+        //     slow = nums[slow];
+        // }
+        // return slow;
+        int left = 1, right = nums.size() - 1, mid, cnt;
+        while(left < right) {
+            mid = left + (right - left) / 2, cnt = 0;
+            for(auto num : nums) if(num <= mid) cnt++;
+            if(cnt > mid) right = mid;
+            else left = mid + 1;
         }
-        fast = 0;
-        while(fast != slow) {
-            fast = nums[fast];
-            slow = nums[slow];
-        }
-        return slow;
+        return left;
     }
 };
 

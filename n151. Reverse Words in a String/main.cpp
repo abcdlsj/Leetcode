@@ -10,13 +10,13 @@ public:
                 if(cur != 0) {
                     s[cur++] = ' ';
                 }
+                int right = left;
+                while(right < s.size() && s[right] != ' ') {
+                    s[cur++] = s[right++];
+                }
+                reverse(s.begin() + cur - (right - left), s.begin() + cur);
+                left = right;
             }
-            int right = left;
-            while(s[right] != ' ' && right < s.size()) {
-                s[cur++] = s[right++];
-            }
-            reverse(s.begin() + cur - (right - left), s.begin() + cur);
-            left = right;
         }
         s.erase(s.begin() + cur, s.end());
         return s;

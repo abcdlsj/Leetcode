@@ -1,8 +1,8 @@
 # Merge Sorted Array *
 - 题目地址: [https://leetcode-cn.com/problems/merge-sorted-array](https://leetcode-cn.com/problems/merge-sorted-array)
-- 执行时间: 0 ms
-- 内存消耗: 9 MB
-- 通过日期: 2020-05-02 10:02
+- 执行时间: 8 ms
+- 内存消耗: 9.2 MB
+- 通过日期: 2020-05-02 10:00
 
 ## 题目内容
 <p>给你两个有序整数数组 <em>nums1 </em>和 <em>nums2</em>，请你将 <em>nums2 </em>合并到 <em>nums1 </em>中<em>，</em>使 <em>nums1 </em>成为一个有序数组。</p>

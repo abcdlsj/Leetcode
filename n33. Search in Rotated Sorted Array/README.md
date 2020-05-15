@@ -1,8 +1,8 @@
 # Search in Rotated Sorted Array **
 - 题目地址: [https://leetcode-cn.com/problems/search-in-rotated-sorted-array](https://leetcode-cn.com/problems/search-in-rotated-sorted-array)
-- 执行时间: 0 ms
+- 执行时间: 4 ms
 - 内存消耗: 6.5 MB
-- 通过日期: 2020-04-09 22:11
+- 通过日期: 2020-04-27 10:35
 
 ## 题目内容
 <p>假设按照升序排序的数组在预先未知的某个点上进行了旋转。</p>
@@ -36,10 +36,10 @@ public:
     int search(vector<int>& nums, int target) {
         int left = 0, right = nums.size() - 1, mid;
 
-        while (left <= right) {
+        while(left <= right) {
             mid = left + (right - left) / 2;
             if(nums[mid] == target) return mid;
-            if(nums[left] <= nums[mid]) {
+            if(nums[mid] >= nums[left]) {
                 if(nums[left] <= target && target <= nums[mid]) {
                     right = mid - 1;
                 } else {
@@ -53,7 +53,7 @@ public:
                 }
             }
         }
-        
+
         return -1;
     }
 };

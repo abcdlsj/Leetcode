@@ -1,8 +1,8 @@
 # Simplify Path **
 - 题目地址: [https://leetcode-cn.com/problems/simplify-path](https://leetcode-cn.com/problems/simplify-path)
-- 执行时间: 12 ms
-- 内存消耗: 8.2 MB
-- 通过日期: 2020-04-26 11:35
+- 执行时间: 16 ms
+- 内存消耗: 8 MB
+- 通过日期: 2020-05-12 11:05
 
 ## 题目内容
 <p>以 Unix 风格给出一个文件的<strong>绝对路径</strong>，你需要简化它。或者换句话说，将其转换为规范路径。</p>
@@ -59,18 +59,22 @@
 class Solution {
 public:
     string simplifyPath(string path) {
-        stringstream is(path);
-        string tmp = "", res = "";
-        vector<string> strs;
-        while(getline(is, tmp, '/')) {
-            if(tmp == "" || tmp == ".") continue;
-            else if(tmp == ".." && !strs.empty()) strs.pop_back();
-            else if(tmp != "..") strs.push_back(tmp);
+        string res = "", dir = "";
+        vector<string> vec;
+        path += "/";
+        for(auto c : path) {
+            if(c == '/') {
+                if(!vec.empty() && dir == "..") vec.pop_back();
+                else if(!dir.empty() && dir != ".." && dir != ".") vec.push_back(dir);
+                dir.clear();
+            } else {
+                dir += c;
+            }
         }
-        for(auto str : strs) {
-            res += "/" + str;
+        if(vec.empty()) return "/";
+        for(auto s : vec) {
+            res += '/' + s;
         }
-        if(strs.empty()) res += "/";
         return res;
     }
 };

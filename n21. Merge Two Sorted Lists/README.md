@@ -1,8 +1,8 @@
 # Merge Two Sorted Lists *
 - 题目地址: [https://leetcode-cn.com/problems/merge-two-sorted-lists](https://leetcode-cn.com/problems/merge-two-sorted-lists)
-- 执行时间: 16 ms
-- 内存消耗: 7.1 MB
-- 通过日期: 2020-04-20 20:54
+- 执行时间: 12 ms
+- 内存消耗: 7.2 MB
+- 通过日期: 2020-05-01 11:35
 
 ## 题目内容
 <p>将两个升序链表合并为一个新的升序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。 </p>
@@ -28,21 +28,18 @@
  */
 class Solution {
 public:
-    ListNode* mergeTwoLists(ListNode* i1, ListNode* i2) {;
-        ListNode *i3 = new ListNode, *cur = i3;
-        while(i1 && i2) {
-            if(i1->val <= i2->val) {
-                cur->next = i1;
-                i1 = i1->next;
+    ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
+        while(l1 && l2) {
+            if(l1->val <= l2->val) {
+                l1->next = mergeTwoLists(l1->next, l2);
+                return l1;
             } else {
-                cur->next = i2;
-                i2 = i2->next;
+                l2->next = mergeTwoLists(l1, l2->next);
+                return l2;
             }
-            cur = cur->next;
         }
-        if(i1 == nullptr) cur->next = i2;
-        if(i2 == nullptr) cur->next = i1;
-        return i3->next;
+        if(l1 == NULL) return l2;
+        return l1;
     }
 };
 

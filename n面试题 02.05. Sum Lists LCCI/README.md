@@ -1,8 +1,8 @@
 # Sum Lists LCCI **
 - 题目地址: [https://leetcode-cn.com/problems/sum-lists-lcci](https://leetcode-cn.com/problems/sum-lists-lcci)
-- 执行时间: 40 ms
-- 内存消耗: 72.6 MB
-- 通过日期: 2020-02-25 17:05
+- 执行时间: 48 ms
+- 内存消耗: 71.2 MB
+- 通过日期: 2020-05-05 19:31
 
 ## 题目内容
 <p>给定两个用链表表示的整数，每个节点包含一个数位。</p>
@@ -42,22 +42,48 @@
  */
 class Solution {
 public:
-  ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
-    ListNode *node = new ListNode(0);
-    ListNode *curnode = node;
-    int tmp = 0;
-    while (l1 || l2 || tmp) {
-      tmp = (l1 ? l1->val : 0) + (l2 ? l2->val : 0) + tmp;
-      if (l1)
-        l1 = l1->next;
-      if (l2)
-        l2 = l2->next;
-      node->next = new ListNode(tmp % 10);
-      tmp /= 10;
-      node = node->next;
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+        // ListNode *dummy = new ListNode(-1), *cur = dummy;
+        // int car = 0, sum = 0;
+        // while(l1 && l2) {
+        //     sum = l1->val + l2->val + car;
+        //     ListNode *node = new ListNode(sum % 10);
+        //     car = sum / 10;
+        //     l1 = l1->next; l2 = l2->next;
+        //     cur->next = node;
+        //     cur = cur->next;
+        // }
+        // while(l1) {
+        //     sum = l1->val + car;
+        //     ListNode *node = new ListNode(sum % 10);
+        //     car = sum / 10;
+        //     l1 = l1->next; cur->next = node;
+        //     cur = cur->next; 
+        // }
+        // while(l2) {
+        //     sum = l2->val + car;
+        //     ListNode *node = new ListNode(sum % 10);
+        //     car = sum / 10;
+        //     l2 = l2->next; cur->next = node;
+        //     cur = cur->next; 
+        // }
+        // if(car != 0) {
+        //     ListNode *node = new ListNode(car);
+        //     cur->next = node;
+        // }
+        // return dummy->next;
+        ListNode *dummy = new ListNode(-1), *cur = dummy;
+        int car = 0, sum = 0;
+        while (l1 || l2 || car) {
+            sum = (l1 ? l1->val : 0) + (l2 ? l2->val : 0) + car;
+            if (l1) l1 = l1->next;
+            if (l2) l2 = l2->next;
+            cur->next = new ListNode(sum % 10);
+            car = sum / 10;
+            cur = cur->next;
+        }
+        return dummy->next;
     }
-    return curnode->next;
-  }
 };
 
 ```
